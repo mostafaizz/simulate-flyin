@@ -1,0 +1,11 @@
+{
+	"Supine" : {
+		"Directory" : "/",
+		"SegmentedDirectory": "SegmentationOutput/"
+	},
+	"Prone": {
+		"Directory" : "/prone/",
+		"SegmentedDirectory": "SegmentationOutput/"
+	},
+	"SegmentedPrefix" : "final_seg"
+}

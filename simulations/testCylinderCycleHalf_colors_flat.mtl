@@ -1,0 +1,2994 @@
+newmtl color_0
+Kd 0 0.0627451 1
+newmtl color_1
+Kd 0 0.0980392 1
+newmtl color_2
+Kd 0 0.129412 1
+newmtl color_3
+Kd 0 0.133333 1
+newmtl color_4
+Kd 0 0.164706 1
+newmtl color_5
+Kd 0 0.0313725 1
+newmtl color_6
+Kd 0 0 1
+newmtl color_7
+Kd 0 0.196078 1
+newmtl color_8
+Kd 0 0.298039 1
+newmtl color_9
+Kd 0 0.329412 1
+newmtl color_10
+Kd 0 0.0666667 1
+newmtl color_11
+Kd 0 0.498039 1
+newmtl color_12
+Kd 0 0.729412 0.866667
+newmtl color_13
+Kd 0 0.898039 0.698039
+newmtl color_14
+Kd 0 1 0.462745
+newmtl color_15
+Kd 0 1 0.498039
+newmtl color_16
+Kd 0 1 0.364706
+newmtl color_17
+Kd 0 1 0.298039
+newmtl color_18
+Kd 0.0313725 1 0.0627451
+newmtl color_19
+Kd 0.0980392 1 0.0313725
+newmtl color_20
+Kd 0.0980392 1 0.133333
+newmtl color_21
+Kd 0.0666667 1 0.333333
+newmtl color_22
+Kd 0 1 0.631373
+newmtl color_23
+Kd 0 1 0.698039
+newmtl color_24
+Kd 0 1 0.796078
+newmtl color_25
+Kd 0 1 0.431373
+newmtl color_26
+Kd 0.0666667 1 0.164706
+newmtl color_27
+Kd 0.133333 1 0.0313725
+newmtl color_28
+Kd 0.2 1 0
+newmtl color_29
+Kd 0.133333 1 0.133333
+newmtl color_30
+Kd 0.0666667 1 0.231373
+newmtl color_31
+Kd 0 0.666667 0.564706
+newmtl color_32
+Kd 0 0.466667 0.764706
+newmtl color_33
+Kd 0 0.2 1
+newmtl color_34
+Kd 0 0.466667 0.666667
+newmtl color_35
+Kd 0 0.733333 0.333333
+newmtl color_36
+Kd 0.0666667 1 0
+newmtl color_37
+Kd 0.0666667 1 0.0313725
+newmtl color_38
+Kd 0.0666667 1 0.329412
+newmtl color_39
+Kd 0.0666667 1 0.596078
+newmtl color_40
+Kd 0 1 0.898039
+newmtl color_41
+Kd 0 1 0.764706
+newmtl color_42
+Kd 0 1 0.733333
+newmtl color_43
+Kd 0 1 0.8
+newmtl color_44
+Kd 0 1 0.6
+newmtl color_45
+Kd 0.0666667 1 0.333333
+newmtl color_46
+Kd 0.133333 1 0.0666667
+newmtl color_47
+Kd 0.2 1 0
+newmtl color_48
+Kd 0 0.262745 1
+newmtl color_49
+Kd 0 0.564706 1
+newmtl color_50
+Kd 0 0.631373 1
+newmtl color_51
+Kd 0 0.764706 1
+newmtl color_52
+Kd 0 0.698039 1
+newmtl color_53
+Kd 0 0.729412 1
+newmtl color_54
+Kd 0 0.796078 0.964706
+newmtl color_55
+Kd 0 0.596078 0.964706
+newmtl color_56
+Kd 0 0.396078 0.964706
+newmtl color_57
+Kd 0 0.462745 0.964706
+newmtl color_58
+Kd 0 0.529412 0.964706
+newmtl color_59
+Kd 0 0.231373 1
+newmtl color_60
+Kd 0 0.196078 1
+newmtl color_61
+Kd 0 0.129412 1
+newmtl color_62
+Kd 0 0.164706 1
+newmtl color_63
+Kd 0 0.0980392 1
+newmtl color_64
+Kd 0 0.0627451 1
+newmtl color_65
+Kd 0 0.0313725 1
+newmtl color_66
+Kd 0 0 1
+newmtl color_67
+Kd 0 0.364706 1
+newmtl color_68
+Kd 0 0.133333 1
+newmtl color_69
+Kd 0 0.262745 1
+newmtl color_70
+Kd 0 0.298039 1
+newmtl color_71
+Kd 0 0.266667 1
+newmtl color_72
+Kd 0 0.329412 1
+newmtl color_73
+Kd 0 0.0666667 1
+newmtl color_74
+Kd 0 0.431373 1
+newmtl color_75
+Kd 0 0.462745 1
+newmtl color_76
+Kd 0 0.396078 1
+newmtl color_77
+Kd 0 0.466667 1
+newmtl color_78
+Kd 0 0.498039 1
+newmtl color_79
+Kd 0 0.662745 1
+newmtl color_80
+Kd 0 0.666667 1
+newmtl color_81
+Kd 0 0.733333 1
+newmtl color_82
+Kd 0 0.8 1
+newmtl color_83
+Kd 0 0.2 1
+newmtl color_84
+Kd 0 0.6 1
+newmtl color_85
+Kd 0 0.333333 1
+newmtl color_86
+Kd 0 0.929412 0.964706
+newmtl color_87
+Kd 0 0.862745 0.964706
+newmtl color_88
+Kd 0 0.898039 0.964706
+newmtl color_89
+Kd 0 0.831373 1
+newmtl color_90
+Kd 0 0.933333 1
+newmtl color_91
+Kd 0 0.4 1
+newmtl color_92
+Kd 0 0.764706 0.898039
+newmtl color_93
+Kd 0 0.898039 0.662745
+newmtl color_94
+Kd 0 1 0.498039
+newmtl color_95
+Kd 0 1 0.298039
+newmtl color_96
+Kd 0 1 0.364706
+newmtl color_97
+Kd 0 1 0.262745
+newmtl color_98
+Kd 0 1 0.466667
+newmtl color_99
+Kd 0 1 0.698039
+newmtl color_100
+Kd 0 0.933333 0.898039
+newmtl color_101
+Kd 0 0.866667 0.964706
+newmtl color_102
+Kd 0 1 0.898039
+newmtl color_103
+Kd 0 1 0.862745
+newmtl color_104
+Kd 0 1 0.929412
+newmtl color_105
+Kd 0 1 0.431373
+newmtl color_106
+Kd 0 1 0.462745
+newmtl color_107
+Kd 0 1 0.564706
+newmtl color_108
+Kd 0 0.964706 0.866667
+newmtl color_109
+Kd 0 0.862745 0.933333
+newmtl color_110
+Kd 0 0.8 0.898039
+newmtl color_111
+Kd 0.0313725 1 0.564706
+newmtl color_112
+Kd 0.0313725 1 0.529412
+newmtl color_113
+Kd 0.0313725 1 0.596078
+newmtl color_114
+Kd 0 0.698039 0.929412
+newmtl color_115
+Kd 0 0.498039 0.964706
+newmtl color_116
+Kd 0 0.862745 1
+newmtl color_117
+Kd 0 0.596078 1
+newmtl color_118
+Kd 0 0.933333 0.964706
+newmtl color_119
+Kd 0 1 0.862745
+newmtl color_120
+Kd 0 1 0.796078
+newmtl color_121
+Kd 0 1 0.764706
+newmtl color_122
+Kd 0 0.964706 0.866667
+newmtl color_123
+Kd 0 0.898039 0.933333
+newmtl color_124
+Kd 0 0.831373 0.831373
+newmtl color_125
+Kd 0 1 0.831373
+newmtl color_126
+Kd 0 1 0.631373
+newmtl color_127
+Kd 0 0.933333 0.8
+newmtl color_128
+Kd 0 0.933333 0.466667
+newmtl color_129
+Kd 0 0.933333 0.498039
+newmtl color_130
+Kd 0 1 0.164706
+newmtl color_131
+Kd 0 1 0.431373
+newmtl color_132
+Kd 0 0.866667 0.6
+newmtl color_133
+Kd 0 0.564706 0.933333
+newmtl color_134
+Kd 0 0.8 0.964706
+newmtl color_135
+Kd 0 0.933333 0.862745
+newmtl color_136
+Kd 0 1 0.729412
+newmtl color_137
+Kd 0 0.964706 0.831373
+newmtl color_138
+Kd 0 0.929412 0.898039
+newmtl color_139
+Kd 0 0.831373 0.898039
+newmtl color_140
+Kd 0 0.866667 0.831373
+newmtl color_141
+Kd 0 0.866667 0.866667
+newmtl color_142
+Kd 0 0.831373 0.933333
+newmtl color_143
+Kd 0 0.529412 1
+newmtl color_144
+Kd 0 0.564706 0.964706
+newmtl color_145
+Kd 0 0.831373 0.929412
+newmtl color_146
+Kd 0 0.831373 0.796078
+newmtl color_147
+Kd 0 0.933333 0.929412
+newmtl color_148
+Kd 0 0.898039 1
+newmtl color_149
+Kd 0 0.929412 0.933333
+newmtl color_150
+Kd 0 0.862745 1
+newmtl color_151
+Kd 0 0.929412 0.964706
+newmtl color_152
+Kd 0 0.964706 0.929412
+newmtl color_153
+Kd 0 0.866667 0.929412
+newmtl color_154
+Kd 0 0.733333 0.964706
+newmtl color_155
+Kd 0 0.796078 0.898039
+newmtl color_156
+Kd 0 0.898039 0.729412
+newmtl color_157
+Kd 0 1 0.529412
+newmtl color_158
+Kd 0 1 0.666667
+newmtl color_159
+Kd 0 0.831373 0.866667
+newmtl color_160
+Kd 0 0.964706 0.662745
+newmtl color_161
+Kd 0 0.964706 0.764706
+newmtl color_162
+Kd 0 0.796078 1
+newmtl color_163
+Kd 0 0.698039 0.866667
+newmtl color_164
+Kd 0 0.866667 0.8
+newmtl color_165
+Kd 0 1 0.466667
+newmtl color_166
+Kd 0 1 0.533333
+newmtl color_167
+Kd 0.0313725 1 0.266667
+newmtl color_168
+Kd 0.0313725 1 0.466667
+newmtl color_169
+Kd 0.0627451 1 0.2
+newmtl color_170
+Kd 0.0313725 1 0.2
+newmtl color_171
+Kd 0.129412 1 0
+newmtl color_172
+Kd 0.262745 1 0
+newmtl color_173
+Kd 0.431373 1 0
+newmtl color_174
+Kd 0.529412 1 0
+newmtl color_175
+Kd 0.564706 1 0
+newmtl color_176
+Kd 0.6 1 0
+newmtl color_177
+Kd 0.462745 1 0
+newmtl color_178
+Kd 0.498039 1 0
+newmtl color_179
+Kd 0.533333 1 0
+newmtl color_180
+Kd 0 0.533333 1
+newmtl color_181
+Kd 0 0.462745 0.933333
+newmtl color_182
+Kd 0 0.764706 0.964706
+newmtl color_183
+Kd 0 0.698039 0.964706
+newmtl color_184
+Kd 0 0.764706 1
+newmtl color_185
+Kd 0 0.729412 1
+newmtl color_186
+Kd 0 0.929412 0.898039
+newmtl color_187
+Kd 0 1 0.662745
+newmtl color_188
+Kd 0 1 1
+newmtl color_189
+Kd 0 1 0.929412
+newmtl color_190
+Kd 0 0.733333 0.862745
+newmtl color_191
+Kd 0 0.733333 0.929412
+newmtl color_192
+Kd 0 1 0.964706
+newmtl color_193
+Kd 0 0.933333 0.929412
+newmtl color_194
+Kd 0 0.898039 0.964706
+newmtl color_195
+Kd 0 0.964706 0.796078
+newmtl color_196
+Kd 0 0.964706 0.631373
+newmtl color_197
+Kd 0 1 0.431373
+newmtl color_198
+Kd 0 1 0.364706
+newmtl color_199
+Kd 0 0.933333 0.564706
+newmtl color_200
+Kd 0 0.933333 0.698039
+newmtl color_201
+Kd 0 0.764706 0.862745
+newmtl color_202
+Kd 0 0.529412 0.964706
+newmtl color_203
+Kd 0 0.964706 0.666667
+newmtl color_204
+Kd 0 0.964706 0.6
+newmtl color_205
+Kd 0 1 0.498039
+newmtl color_206
+Kd 0 0.666667 0.933333
+newmtl color_207
+Kd 0 0.898039 0.831373
+newmtl color_208
+Kd 0 0.729412 0.933333
+newmtl color_209
+Kd 0 0.796078 0.933333
+newmtl color_210
+Kd 0 1 0.698039
+newmtl color_211
+Kd 0 0.933333 0.898039
+newmtl color_212
+Kd 0 0.733333 0.796078
+newmtl color_213
+Kd 0 0.733333 0.831373
+newmtl color_214
+Kd 0 0.964706 0.898039
+newmtl color_215
+Kd 0 0.764706 1
+newmtl color_216
+Kd 0 0.831373 1
+newmtl color_217
+Kd 0 0.866667 0.933333
+newmtl color_218
+Kd 0 0.8 1
+newmtl color_219
+Kd 0 1 0.596078
+newmtl color_220
+Kd 0 1 0.898039
+newmtl color_221
+Kd 0 1 0.462745
+newmtl color_222
+Kd 0 0.898039 0.764706
+newmtl color_223
+Kd 0 0.898039 0.662745
+newmtl color_224
+Kd 0 0.898039 0.796078
+newmtl color_225
+Kd 0 0.796078 0.964706
+newmtl color_226
+Kd 0 0.929412 0.8
+newmtl color_227
+Kd 0 0.964706 0.733333
+newmtl color_228
+Kd 0 0.764706 0.933333
+newmtl color_229
+Kd 0 0.6 0.933333
+newmtl color_230
+Kd 0 0.898039 0.933333
+newmtl color_231
+Kd 0 0.933333 1
+newmtl color_232
+Kd 0 0.898039 1
+newmtl color_233
+Kd 0 0.933333 0.631373
+newmtl color_234
+Kd 0 0.933333 0.796078
+newmtl color_235
+Kd 0 0.764706 0.929412
+newmtl color_236
+Kd 0 0.733333 0.933333
+newmtl color_237
+Kd 0 0.533333 0.933333
+newmtl color_238
+Kd 0 0.733333 0.733333
+newmtl color_239
+Kd 0 0.733333 0.498039
+newmtl color_240
+Kd 0 0.6 0.698039
+newmtl color_241
+Kd 0 0.866667 0.396078
+newmtl color_242
+Kd 0 0.866667 0.364706
+newmtl color_243
+Kd 0 1 0.0980392
+newmtl color_244
+Kd 0 0.964706 0.8
+newmtl color_245
+Kd 0 0.898039 0.8
+newmtl color_246
+Kd 0 0.933333 0.929412
+newmtl color_247
+Kd 0 0.866667 1
+newmtl color_248
+Kd 0 0.964706 1
+newmtl color_249
+Kd 0 0.929412 1
+newmtl color_250
+Kd 0 1 0.329412
+newmtl color_251
+Kd 0 1 0.129412
+newmtl color_252
+Kd 0 0 1
+newmtl color_253
+Kd 0 0.0980392 1
+newmtl color_254
+Kd 0 0.0627451 1
+newmtl color_255
+Kd 0 0.396078 1
+newmtl color_256
+Kd 0 0.631373 0.933333
+newmtl color_257
+Kd 0 0.533333 0.964706
+newmtl color_258
+Kd 0 0.698039 1
+newmtl color_259
+Kd 0 0.964706 0.964706
+newmtl color_260
+Kd 0 0.298039 1
+newmtl color_261
+Kd 0 0.262745 1
+newmtl color_262
+Kd 0 0.329412 1
+newmtl color_263
+Kd 0 0.529412 1
+newmtl color_264
+Kd 0 0.662745 1
+newmtl color_265
+Kd 0 0.333333 1
+newmtl color_266
+Kd 0 0.564706 1
+newmtl color_267
+Kd 0 0.862745 0.964706
+newmtl color_268
+Kd 0 0.164706 1
+newmtl color_269
+Kd 0 0.196078 1
+newmtl color_270
+Kd 0 0.4 1
+newmtl color_271
+Kd 0 0.462745 1
+newmtl color_272
+Kd 0 0.129412 1
+newmtl color_273
+Kd 0 1 0.396078
+newmtl color_274
+Kd 0 1 0.196078
+newmtl color_275
+Kd 0 0.431373 1
+newmtl color_276
+Kd 0 0.364706 1
+newmtl color_277
+Kd 0 0.466667 1
+newmtl color_278
+Kd 0 0.231373 1
+newmtl color_279
+Kd 0 0.266667 1
+newmtl color_280
+Kd 0 0.0666667 1
+newmtl color_281
+Kd 0 0.2 1
+newmtl color_282
+Kd 0 0.964706 0.933333
+newmtl color_283
+Kd 0 0.933333 0.662745
+newmtl color_284
+Kd 0 0.631373 0.898039
+newmtl color_285
+Kd 0 0.0313725 1
+newmtl color_286
+Kd 0 1 0.533333
+newmtl color_287
+Kd 0 1 0.6
+newmtl color_288
+Kd 0 0.698039 0.733333
+newmtl color_289
+Kd 0 0.796078 1
+newmtl color_290
+Kd 0 0.631373 1
+newmtl color_291
+Kd 0 0.6 1
+newmtl color_292
+Kd 0 0.533333 1
+newmtl color_293
+Kd 0 0.666667 1
+newmtl color_294
+Kd 0 0.733333 1
+newmtl color_295
+Kd 0 0.964706 0.929412
+newmtl color_296
+Kd 0 0.929412 0.964706
+newmtl color_297
+Kd 0 0.796078 0.8
+newmtl color_298
+Kd 0 0.831373 0.6
+newmtl color_299
+Kd 0 0.831373 0.964706
+newmtl color_300
+Kd 0 0.596078 1
+newmtl color_301
+Kd 0 1 0.4
+newmtl color_302
+Kd 0 1 0.733333
+newmtl color_303
+Kd 0 0.898039 0.933333
+newmtl color_304
+Kd 0 0.498039 1
+newmtl color_305
+Kd 0 0.764706 0.866667
+newmtl color_306
+Kd 0 0.933333 0.733333
+newmtl color_307
+Kd 0 0.529412 0.898039
+newmtl color_308
+Kd 0 1 0.564706
+newmtl color_309
+Kd 0 0.964706 0.631373
+newmtl color_310
+Kd 0 1 0.8
+newmtl color_311
+Kd 0 0.933333 0.933333
+newmtl color_312
+Kd 0 0.8 0.933333
+newmtl color_313
+Kd 0 0.564706 0.933333
+newmtl color_314
+Kd 0 0.4 0.933333
+newmtl color_315
+Kd 0 0.133333 1
+newmtl color_316
+Kd 0 0.796078 0.866667
+newmtl color_317
+Kd 0 0.831373 0.698039
+newmtl color_318
+Kd 0 0.964706 0.698039
+newmtl color_319
+Kd 0 0.929412 0.831373
+newmtl color_320
+Kd 0 0.698039 0.666667
+newmtl color_321
+Kd 0 0.8 0.666667
+newmtl color_322
+Kd 0 1 0.133333
+newmtl color_323
+Kd 0 0.764706 0.466667
+newmtl color_324
+Kd 0 0.596078 0.733333
+newmtl color_325
+Kd 0 1 0.898039
+newmtl color_326
+Kd 0 1 0.964706
+newmtl color_327
+Kd 0 1 0.933333
+newmtl color_328
+Kd 0 0.698039 0.8
+newmtl color_329
+Kd 0 0.396078 0.8
+newmtl color_330
+Kd 0 0.698039 0.698039
+newmtl color_331
+Kd 0 0.662745 0.898039
+newmtl color_332
+Kd 0 0.831373 0.631373
+newmtl color_333
+Kd 0 0.929412 0.866667
+newmtl color_334
+Kd 0 1 0.298039
+newmtl color_335
+Kd 0 0.866667 0.898039
+newmtl color_336
+Kd 0 0.862745 1
+newmtl color_337
+Kd 0 0.898039 0.898039
+newmtl color_338
+Kd 0 0.8 0.8
+newmtl color_339
+Kd 0 0.964706 0.866667
+newmtl color_340
+Kd 0 0.933333 0.831373
+newmtl color_341
+Kd 0 1 0.866667
+newmtl color_342
+Kd 0 0.898039 0.733333
+newmtl color_343
+Kd 0 0.666667 0.933333
+newmtl color_344
+Kd 0 0.898039 0.866667
+newmtl color_345
+Kd 0 0.733333 0.866667
+newmtl color_346
+Kd 0 0.8 0.831373
+newmtl color_347
+Kd 0 0.698039 0.933333
+newmtl color_348
+Kd 0 0.964706 0.729412
+newmtl color_349
+Kd 0 0.729412 0.898039
+newmtl color_350
+Kd 0 0.729412 0.964706
+newmtl color_351
+Kd 0 0.662745 0.964706
+newmtl color_352
+Kd 0 0.831373 0.862745
+newmtl color_353
+Kd 0 0.964706 0.862745
+newmtl color_354
+Kd 0 0.933333 0.862745
+newmtl color_355
+Kd 0 0.933333 0.764706
+newmtl color_356
+Kd 0 0.933333 0.8
+newmtl color_357
+Kd 0.0666667 1 0.133333
+newmtl color_358
+Kd 0.0666667 1 0.266667
+newmtl color_359
+Kd 0.133333 1 0.133333
+newmtl color_360
+Kd 0.0666667 1 0.4
+newmtl color_361
+Kd 0.0980392 1 0.266667
+newmtl color_362
+Kd 0.0313725 1 0.564706
+newmtl color_363
+Kd 0.0313725 1 0.431373
+newmtl color_364
+Kd 0 0.8 0.764706
+newmtl color_365
+Kd 0 0.8 0.6
+newmtl color_366
+Kd 0 0.764706 0.8
+newmtl color_367
+Kd 0 1 0.262745
+newmtl color_368
+Kd 0 0.898039 0.964706
+newmtl color_369
+Kd 0 1 0.164706
+newmtl color_370
+Kd 0 0.666667 0.964706
+newmtl color_371
+Kd 0 0.733333 0.929412
+newmtl color_372
+Kd 0 0.8 0.866667
+newmtl color_373
+Kd 0 0.466667 0.933333
+newmtl color_374
+Kd 0 0.431373 0.964706
+newmtl color_375
+Kd 0 0.333333 0.964706
+newmtl color_376
+Kd 0 1 0.231373
+newmtl color_377
+Kd 0 0.662745 0.933333
+newmtl color_378
+Kd 0 0.8 0.698039
+newmtl color_379
+Kd 0.0313725 1 0.364706
+newmtl color_380
+Kd 0.0627451 1 0.231373
+newmtl color_381
+Kd 0.0980392 1 0
+newmtl color_382
+Kd 0.0627451 1 0
+newmtl color_383
+Kd 0.0313725 1 0.231373
+newmtl color_384
+Kd 0 0.698039 0.564706
+newmtl color_385
+Kd 0 0.364706 0.898039
+newmtl color_386
+Kd 0.0313725 0.964706 0.564706
+newmtl color_387
+Kd 0 0.0313725 1
+newmtl color_388
+Kd 0 0.0666667 1
+newmtl color_389
+Kd 0 0.498039 1
+newmtl color_390
+Kd 0 0.729412 1
+newmtl color_391
+Kd 0 0.231373 1
+newmtl color_392
+Kd 0 0.466667 1
+newmtl color_393
+Kd 0 0.6 1
+newmtl color_394
+Kd 0 0.933333 0.964706
+newmtl color_395
+Kd 0 0.0980392 1
+newmtl color_396
+Kd 0 0.333333 1
+newmtl color_397
+Kd 0 0.564706 1
+newmtl color_398
+Kd 0 0.431373 1
+newmtl color_399
+Kd 0 0.2 1
+newmtl color_400
+Kd 0 0.133333 1
+newmtl color_401
+Kd 0 0.164706 1
+newmtl color_402
+Kd 0 0.364706 1
+newmtl color_403
+Kd 0 0.196078 1
+newmtl color_404
+Kd 0 0.129412 1
+newmtl color_405
+Kd 0 0.298039 1
+newmtl color_406
+Kd 0 0.564706 0.898039
+newmtl color_407
+Kd 0 0.866667 0.764706
+newmtl color_408
+Kd 0 1 0.596078
+newmtl color_409
+Kd 0.0666667 1 0.364706
+newmtl color_410
+Kd 0.0666667 1 0.164706
+newmtl color_411
+Kd 0.0666667 1 0.0666667
+newmtl color_412
+Kd 0 0.462745 1
+newmtl color_413
+Kd 0 0.329412 1
+newmtl color_414
+Kd 0 0.698039 0.898039
+newmtl color_415
+Kd 0 0.4 1
+newmtl color_416
+Kd 0 0.898039 0.831373
+newmtl color_417
+Kd 0 1 0.796078
+newmtl color_418
+Kd 0 1 0.729412
+newmtl color_419
+Kd 0 0.0627451 1
+newmtl color_420
+Kd 0 0.262745 1
+newmtl color_421
+Kd 0 0.266667 1
+newmtl color_422
+Kd 0 1 0.764706
+newmtl color_423
+Kd 0 1 0.631373
+newmtl color_424
+Kd 0 1 0.831373
+newmtl color_425
+Kd 0 0.964706 0.796078
+newmtl color_426
+Kd 0 0.666667 0.898039
+newmtl color_427
+Kd 0 0.698039 0.764706
+newmtl color_428
+Kd 0 0.666667 0.764706
+newmtl color_429
+Kd 0 0.866667 0.431373
+newmtl color_430
+Kd 0 1 0.129412
+newmtl color_431
+Kd 0 0.698039 1
+newmtl color_432
+Kd 0 0.533333 1
+newmtl color_433
+Kd 0 1 0.564706
+newmtl color_434
+Kd 0 0.898039 0.666667
+newmtl color_435
+Kd 0 0.596078 1
+newmtl color_436
+Kd 0 0.866667 0.729412
+newmtl color_437
+Kd 0 1 0.396078
+newmtl color_438
+Kd 0 1 0.431373
+newmtl color_439
+Kd 0 1 0.333333
+newmtl color_440
+Kd 0 0.631373 0.8
+newmtl color_441
+Kd 0 0.498039 0.898039
+newmtl color_442
+Kd 0 0.733333 0.764706
+newmtl color_443
+Kd 0 1 0.533333
+newmtl color_444
+Kd 0.0666667 1 0.333333
+newmtl color_445
+Kd 0.133333 1 0.2
+newmtl color_446
+Kd 0.164706 1 0
+newmtl color_447
+Kd 0.2 1 0
+newmtl color_448
+Kd 0.231373 1 0
+newmtl color_449
+Kd 0.164706 1 0.0666667
+newmtl color_450
+Kd 0.0980392 1 0.2
+newmtl color_451
+Kd 0 0.866667 0.533333
+newmtl color_452
+Kd 0 0.666667 1
+newmtl color_453
+Kd 0 0.6 0.964706
+newmtl color_454
+Kd 0 0.898039 0.862745
+newmtl color_455
+Kd 0 0.529412 1
+newmtl color_456
+Kd 0 0.6 0.898039
+newmtl color_457
+Kd 0.0627451 1 0.164706
+newmtl color_458
+Kd 0.0313725 1 0.462745
+newmtl color_459
+Kd 0.0627451 1 0.298039
+newmtl color_460
+Kd 0 0.631373 0.831373
+newmtl color_461
+Kd 0 0.8 0.796078
+newmtl color_462
+Kd 0 0.862745 0.898039
+newmtl color_463
+Kd 0 0.964706 0.698039
+newmtl color_464
+Kd 0 1 0.364706
+newmtl color_465
+Kd 0 0.964706 0.533333
+newmtl color_466
+Kd 0 0.662745 1
+newmtl color_467
+Kd 0 0.396078 1
+newmtl color_468
+Kd 0 0.533333 0.898039
+newmtl color_469
+Kd 0 0.933333 0.929412
+newmtl color_470
+Kd 0 0.631373 1
+newmtl color_471
+Kd 0 0.898039 0.929412
+newmtl color_472
+Kd 0 0.6 0.831373
+newmtl color_473
+Kd 0 0.8 0.498039
+newmtl color_474
+Kd 0 0.796078 0.898039
+newmtl color_475
+Kd 0 1 0.733333
+newmtl color_476
+Kd 0 0.764706 0.831373
+newmtl color_477
+Kd 0 0.529412 0.933333
+newmtl color_478
+Kd 0 0.764706 0.733333
+newmtl color_479
+Kd 0 1 1
+newmtl color_480
+Kd 0 0.964706 0.831373
+newmtl color_481
+Kd 0 0.462745 0.666667
+newmtl color_482
+Kd 0.0313725 0.764706 0.333333
+newmtl color_483
+Kd 0.0313725 0.764706 0.431373
+newmtl color_484
+Kd 0.0627451 1 0.0980392
+newmtl color_485
+Kd 0.0313725 1 0.298039
+newmtl color_486
+Kd 0.0627451 1 0.2
+newmtl color_487
+Kd 0 0.8 0.862745
+newmtl color_488
+Kd 0 0.831373 0.764706
+newmtl color_489
+Kd 0.0313725 0.964706 0.333333
+newmtl color_490
+Kd 0.0313725 1 0.231373
+newmtl color_491
+Kd 0.0313725 1 0.596078
+newmtl color_492
+Kd 0 0.866667 0.498039
+newmtl color_493
+Kd 0 1 0.329412
+newmtl color_494
+Kd 0 1 0.164706
+newmtl color_495
+Kd 0 1 0.262745
+newmtl color_496
+Kd 0 1 0.298039
+newmtl color_497
+Kd 0 1 0.498039
+newmtl color_498
+Kd 0 0.8 0.662745
+newmtl color_499
+Kd 0 0.733333 0.898039
+newmtl color_500
+Kd 0 0.498039 0.866667
+newmtl color_501
+Kd 0 0.831373 0.8
+newmtl color_502
+Kd 0 0.666667 0.831373
+newmtl color_503
+Kd 0 0.498039 0.831373
+newmtl color_504
+Kd 0 0.964706 0.862745
+newmtl color_505
+Kd 0 0.898039 0.698039
+newmtl color_506
+Kd 0 0.631373 0.866667
+newmtl color_507
+Kd 0 0.933333 0.729412
+newmtl color_508
+Kd 0 0.431373 0.764706
+newmtl color_509
+Kd 0 0.666667 0.631373
+newmtl color_510
+Kd 0 0.333333 0.866667
+newmtl color_511
+Kd 0 0.764706 0.666667
+newmtl color_512
+Kd 0.0666667 0.898039 0.333333
+newmtl color_513
+Kd 0.0666667 1 0
+newmtl color_514
+Kd 0.133333 1 0
+newmtl color_515
+Kd 0.0666667 1 0.0313725
+newmtl color_516
+Kd 0.133333 1 0.0313725
+newmtl color_517
+Kd 0.2 1 0.0313725
+newmtl color_518
+Kd 0.266667 1 0
+newmtl color_519
+Kd 0.2 1 0
+newmtl color_520
+Kd 0.231373 1 0
+newmtl color_521
+Kd 0.262745 1 0
+newmtl color_522
+Kd 0.298039 1 0
+newmtl color_523
+Kd 0.196078 0.866667 0.333333
+newmtl color_524
+Kd 0.0980392 0.866667 0.4
+newmtl color_525
+Kd 0 0.898039 0.8
+newmtl color_526
+Kd 0.0666667 0.898039 0.533333
+newmtl color_527
+Kd 0.164706 1 0.0666667
+newmtl color_528
+Kd 0 0.698039 0.729412
+newmtl color_529
+Kd 0.0980392 1 0.133333
+newmtl color_530
+Kd 0.0980392 0.866667 0.564706
+newmtl color_531
+Kd 0 1 0.662745
+newmtl color_532
+Kd 0 0.964706 0.564706
+newmtl color_533
+Kd 0.0666667 1 0.164706
+newmtl color_534
+Kd 0.333333 1 0.0313725
+newmtl color_535
+Kd 0.333333 1 0.0980392
+newmtl color_536
+Kd 0.2 1 0.196078
+newmtl color_537
+Kd 0 0.8 0.529412
+newmtl color_538
+Kd 0 0.6 0.764706
+newmtl color_539
+Kd 0.164706 1 0
+newmtl color_540
+Kd 0.329412 1 0
+newmtl color_541
+Kd 0.364706 1 0
+newmtl color_542
+Kd 0.431373 1 0
+newmtl color_543
+Kd 0.129412 1 0.0666667
+newmtl color_544
+Kd 0.0980392 1 0.133333
+newmtl color_545
+Kd 0.2 0.8 0.333333
+newmtl color_546
+Kd 0.133333 0.8 0.431373
+newmtl color_547
+Kd 0.0313725 1 0.266667
+newmtl color_548
+Kd 0.0627451 1 0.133333
+newmtl color_549
+Kd 0.129412 1 0
+newmtl color_550
+Kd 0.0980392 1 0.164706
+newmtl color_551
+Kd 0.129412 1 0.164706
+newmtl color_552
+Kd 0.133333 1 0
+newmtl color_553
+Kd 0.0666667 1 0
+newmtl color_554
+Kd 0 1 0.164706
+newmtl color_555
+Kd 0.396078 1 0
+newmtl color_556
+Kd 0.364706 1 0
+newmtl color_557
+Kd 0.431373 1 0
+newmtl color_558
+Kd 0.0980392 0.866667 0.564706
+newmtl color_559
+Kd 0.196078 0.866667 0.333333
+newmtl color_560
+Kd 0.0980392 0.866667 0.466667
+newmtl color_561
+Kd 0.196078 1 0.133333
+newmtl color_562
+Kd 0.0980392 1 0.0313725
+newmtl color_563
+Kd 0 1 0.196078
+newmtl color_564
+Kd 0 1 0.298039
+newmtl color_565
+Kd 0 1 0.462745
+newmtl color_566
+Kd 0 1 0.498039
+newmtl color_567
+Kd 0 0.733333 0.698039
+newmtl color_568
+Kd 0 0.662745 0.698039
+newmtl color_569
+Kd 0 1 0.831373
+newmtl color_570
+Kd 0.0313725 0.733333 0.666667
+newmtl color_571
+Kd 0.0313725 0.564706 0.666667
+newmtl color_572
+Kd 0.0627451 0.831373 0.333333
+newmtl color_573
+Kd 0.0313725 0.831373 0.364706
+newmtl color_574
+Kd 0.0313725 1 0.196078
+newmtl color_575
+Kd 0 0.866667 0.529412
+newmtl color_576
+Kd 0 0.866667 0.596078
+newmtl color_577
+Kd 0 0.4 0.733333
+newmtl color_578
+Kd 0 0.733333 0.4
+newmtl color_579
+Kd 0.0313725 1 0.0666667
+newmtl color_580
+Kd 0.0627451 1 0
+newmtl color_581
+Kd 0.0666667 0.8 0.466667
+newmtl color_582
+Kd 0 0.631373 0.964706
+newmtl color_583
+Kd 0 1 0.964706
+newmtl color_584
+Kd 0 0.796078 0.8
+newmtl color_585
+Kd 0 0.964706 0.6
+newmtl color_586
+Kd 0 0.964706 0.764706
+newmtl color_587
+Kd 0 0.933333 0.733333
+newmtl color_588
+Kd 0 0.964706 0.964706
+newmtl color_589
+Kd 0 1 0.898039
+newmtl color_590
+Kd 0 1 0.329412
+newmtl color_591
+Kd 0 1 0.529412
+newmtl color_592
+Kd 0 1 0.364706
+newmtl color_593
+Kd 0.431373 1 0
+newmtl color_594
+Kd 0.0980392 1 0.0666667
+newmtl color_595
+Kd 0.0980392 1 0
+newmtl color_596
+Kd 0 1 0.133333
+newmtl color_597
+Kd 0 1 0.862745
+newmtl color_598
+Kd 0 1 0.929412
+newmtl color_599
+Kd 0 0.898039 0.596078
+newmtl color_600
+Kd 0.0313725 1 0.333333
+newmtl color_601
+Kd 0 0.733333 0.666667
+newmtl color_602
+Kd 0 0.666667 0.698039
+newmtl color_603
+Kd 0.0666667 1 0.0666667
+newmtl color_604
+Kd 0.0666667 1 0.0313725
+newmtl color_605
+Kd 0 0.666667 0.466667
+newmtl color_606
+Kd 0.0666667 1 0.133333
+newmtl color_607
+Kd 0 1 0.662745
+newmtl color_608
+Kd 0 1 1
+newmtl color_609
+Kd 0 0.866667 0.796078
+newmtl color_610
+Kd 0 0.866667 0.631373
+newmtl color_611
+Kd 0 1 0.431373
+newmtl color_612
+Kd 0 1 0.564706
+newmtl color_613
+Kd 0 1 0.596078
+newmtl color_614
+Kd 0.0666667 1 0.0980392
+newmtl color_615
+Kd 0 0.733333 0.631373
+newmtl color_616
+Kd 0 1 0.262745
+newmtl color_617
+Kd 0 0.866667 0.564706
+newmtl color_618
+Kd 0 0.533333 0.764706
+newmtl color_619
+Kd 0 0.733333 0.431373
+newmtl color_620
+Kd 0 0.662745 0.8
+newmtl color_621
+Kd 0 0.698039 0.6
+newmtl color_622
+Kd 0 0.364706 0.8
+newmtl color_623
+Kd 0 0.964706 0.631373
+newmtl color_624
+Kd 0 0.964706 0.596078
+newmtl color_625
+Kd 0 0.898039 0.764706
+newmtl color_626
+Kd 0 0.764706 0.764706
+newmtl color_627
+Kd 0 0.729412 0.866667
+newmtl color_628
+Kd 0 0.964706 0.533333
+newmtl color_629
+Kd 0 0.964706 0.333333
+newmtl color_630
+Kd 0.364706 1 0
+newmtl color_631
+Kd 0.462745 1 0
+newmtl color_632
+Kd 0.298039 1 0.133333
+newmtl color_633
+Kd 0.329412 1 0.133333
+newmtl color_634
+Kd 0.396078 1 0
+newmtl color_635
+Kd 0 0.8 0.4
+newmtl color_636
+Kd 0 0.596078 0.933333
+newmtl color_637
+Kd 0 0.866667 0.866667
+newmtl color_638
+Kd 0 0.933333 0.8
+newmtl color_639
+Kd 0 1 0.631373
+newmtl color_640
+Kd 0 1 0.698039
+newmtl color_641
+Kd 0 0.929412 0.764706
+newmtl color_642
+Kd 0 0.964706 0.662745
+newmtl color_643
+Kd 0 1 0.529412
+newmtl color_644
+Kd 0 0.698039 0.631373
+newmtl color_645
+Kd 0 1 0.396078
+newmtl color_646
+Kd 0 0.933333 0.529412
+newmtl color_647
+Kd 0 0.933333 0.662745
+newmtl color_648
+Kd 0 1 0.333333
+newmtl color_649
+Kd 0.2 1 0.129412
+newmtl color_650
+Kd 0 1 0.831373
+newmtl color_651
+Kd 0 1 0.866667
+newmtl color_652
+Kd 0 0.964706 0.933333
+newmtl color_653
+Kd 0 0.964706 0.866667
+newmtl color_654
+Kd 0 0.964706 0.898039
+newmtl color_655
+Kd 0 0.933333 0.898039
+newmtl color_656
+Kd 0 0.933333 0.796078
+newmtl color_657
+Kd 0 0.764706 0.796078
+newmtl color_658
+Kd 0.0313725 1 0.462745
+newmtl color_659
+Kd 0.164706 1 0.164706
+newmtl color_660
+Kd 0.196078 1 0
+newmtl color_661
+Kd 0.0980392 0.964706 0.498039
+newmtl color_662
+Kd 0 0.831373 0.533333
+newmtl color_663
+Kd 0 0.831373 0.4
+newmtl color_664
+Kd 0 1 0.0980392
+newmtl color_665
+Kd 0 0.933333 0.364706
+newmtl color_666
+Kd 0 0.466667 0.733333
+newmtl color_667
+Kd 0 0.498039 0.733333
+newmtl color_668
+Kd 0 0.396078 0.733333
+newmtl color_669
+Kd 0 1 0.298039
+newmtl color_670
+Kd 0 0.964706 0.796078
+newmtl color_671
+Kd 0 0.6 0.666667
+newmtl color_672
+Kd 0 0.333333 0.733333
+newmtl color_673
+Kd 0 0.533333 0.733333
+newmtl color_674
+Kd 0 0.831373 0.733333
+newmtl color_675
+Kd 0 0.498039 0.666667
+newmtl color_676
+Kd 0 0.964706 0.498039
+newmtl color_677
+Kd 0 0.964706 0.564706
+newmtl color_678
+Kd 0 0.964706 0.831373
+newmtl color_679
+Kd 0 0.8 0.631373
+newmtl color_680
+Kd 0 0.396078 0.933333
+newmtl color_681
+Kd 0 0.698039 0.396078
+newmtl color_682
+Kd 0.0666667 1 0.498039
+newmtl color_683
+Kd 0.0666667 1 0.466667
+newmtl color_684
+Kd 0 1 0.764706
+newmtl color_685
+Kd 0 0.831373 0.498039
+newmtl color_686
+Kd 0 0.796078 0.698039
+newmtl color_687
+Kd 0 0.831373 0.662745
+newmtl color_688
+Kd 0 1 0.498039
+newmtl color_689
+Kd 0.0666667 1 0.129412
+newmtl color_690
+Kd 0 1 0.6
+newmtl color_691
+Kd 0 1 0.666667
+newmtl color_692
+Kd 0 0.662745 0.866667
+newmtl color_693
+Kd 0.0666667 1 0.164706
+newmtl color_694
+Kd 0 1 0.796078
+newmtl color_695
+Kd 0 0.964706 0.929412
+newmtl color_696
+Kd 0 1 0.462745
+newmtl color_697
+Kd 0 1 0.196078
+newmtl color_698
+Kd 0 0.862745 0.866667
+newmtl color_699
+Kd 0 0.898039 0.733333
+newmtl color_700
+Kd 0 1 0.733333
+newmtl color_701
+Kd 0 0.498039 0.933333
+newmtl color_702
+Kd 0 0.631373 0.698039
+newmtl color_703
+Kd 0.529412 1 0
+newmtl color_704
+Kd 0.498039 1 0
+newmtl color_705
+Kd 0.564706 1 0
+newmtl color_706
+Kd 0.129412 1 0.133333
+newmtl color_707
+Kd 0.0313725 1 0.466667
+newmtl color_708
+Kd 0 0.466667 0.964706
+newmtl color_709
+Kd 0.0313725 1 0.364706
+newmtl color_710
+Kd 0.0313725 1 0.298039
+newmtl color_711
+Kd 0.6 1 0
+newmtl color_712
+Kd 0 1 0.8
+newmtl color_713
+Kd 0 1 0.498039
+newmtl color_714
+Kd 0.329412 1 0
+newmtl color_715
+Kd 0.164706 1 0.0313725
+newmtl color_716
+Kd 0.298039 1 0.0313725
+newmtl color_717
+Kd 0.133333 1 0.0980392
+newmtl color_718
+Kd 0.133333 1 0.164706
+newmtl color_719
+Kd 0 0.964706 0.498039
+newmtl color_720
+Kd 0 0.964706 0.729412
+newmtl color_721
+Kd 0 0.596078 0.964706
+newmtl color_722
+Kd 0.466667 1 0
+newmtl color_723
+Kd 0.329412 1 0
+newmtl color_724
+Kd 0.266667 1 0.164706
+newmtl color_725
+Kd 0.396078 1 0
+newmtl color_726
+Kd 0.231373 1 0.0666667
+newmtl color_727
+Kd 0.266667 1 0.0666667
+newmtl color_728
+Kd 0.133333 1 0.0666667
+newmtl color_729
+Kd 0.0313725 1 0.164706
+newmtl color_730
+Kd 0.0313725 0.964706 0.498039
+newmtl color_731
+Kd 0 0.862745 0.831373
+newmtl color_732
+Kd 0.0313725 1 0.0313725
+newmtl color_733
+Kd 0.0313725 1 0.133333
+newmtl color_734
+Kd 0 1 0.133333
+newmtl color_735
+Kd 0 1 0.0313725
+newmtl color_736
+Kd 0 1 0.129412
+newmtl color_737
+Kd 0.462745 1 0
+newmtl color_738
+Kd 0.298039 1 0.0666667
+newmtl color_739
+Kd 0.0666667 1 0.364706
+newmtl color_740
+Kd 0.0666667 1 0.462745
+newmtl color_741
+Kd 0.133333 1 0.431373
+newmtl color_742
+Kd 0.164706 1 0.266667
+newmtl color_743
+Kd 0.0313725 1 0.6
+newmtl color_744
+Kd 0 1 0.262745
+newmtl color_745
+Kd 0 1 0.0627451
+newmtl color_746
+Kd 0 1 0.431373
+newmtl color_747
+Kd 0 1 0.564706
+newmtl color_748
+Kd 0 1 0.729412
+newmtl color_749
+Kd 0 0.898039 0.796078
+newmtl color_750
+Kd 0 1 0.329412
+newmtl color_751
+Kd 0.0666667 1 0.262745
+newmtl color_752
+Kd 0.0666667 1 0.196078
+newmtl color_753
+Kd 0.133333 1 0.0313725
+newmtl color_754
+Kd 0.2 1 0.0666667
+newmtl color_755
+Kd 0.364706 1 0
+newmtl color_756
+Kd 0.133333 1 0.262745
+newmtl color_757
+Kd 0 0.796078 0.831373
+newmtl color_758
+Kd 0.133333 1 0.133333
+newmtl color_759
+Kd 0 0.898039 0.898039
+newmtl color_760
+Kd 0 0.929412 0.898039
+newmtl color_761
+Kd 0 1 1
+newmtl color_762
+Kd 0 0.964706 0.964706
+newmtl color_763
+Kd 0.0980392 1 0.631373
+newmtl color_764
+Kd 0.196078 1 0.333333
+newmtl color_765
+Kd 0.0980392 0.933333 0.333333
+newmtl color_766
+Kd 0.0313725 0.933333 0.6
+newmtl color_767
+Kd 0 0.631373 0.933333
+newmtl color_768
+Kd 0 0.364706 0.933333
+newmtl color_769
+Kd 0.129412 1 0.333333
+newmtl color_770
+Kd 0 0.862745 0.933333
+newmtl color_771
+Kd 0 0.964706 0.898039
+newmtl color_772
+Kd 0 0.596078 0.866667
+newmtl color_773
+Kd 0 0.764706 0.698039
+newmtl color_774
+Kd 0 1 0.529412
+newmtl color_775
+Kd 0 0.898039 0.698039
+newmtl color_776
+Kd 0.0980392 0.964706 0.4
+newmtl color_777
+Kd 0.0980392 0.929412 0.666667
+newmtl color_778
+Kd 0 1 0.533333
+newmtl color_779
+Kd 0 1 0.364706
+newmtl color_780
+Kd 0 1 0.396078
+newmtl color_781
+Kd 0.164706 1 0.0980392
+newmtl color_782
+Kd 0.0313725 1 0.196078
+newmtl color_783
+Kd 0.196078 1 0.0666667
+newmtl color_784
+Kd 0.329412 1 0.0666667
+newmtl color_785
+Kd 0 0.933333 0.831373
+newmtl color_786
+Kd 0.133333 0.529412 0.666667
+newmtl color_787
+Kd 0.133333 0.831373 0.533333
+newmtl color_788
+Kd 0.298039 1 0.2
+newmtl color_789
+Kd 0.133333 0.698039 0.4
+newmtl color_790
+Kd 0.298039 1 0.0666667
+newmtl color_791
+Kd 0 0.6 0.866667
+newmtl color_792
+Kd 0.0313725 0.964706 0.431373
+newmtl color_793
+Kd 0.2 1 0.2
+newmtl color_794
+Kd 0 1 0.298039
+newmtl color_795
+Kd 0 0.933333 0.631373
+newmtl color_796
+Kd 0 0.898039 0.764706
+newmtl color_797
+Kd 0 0.964706 0.831373
+newmtl color_798
+Kd 0 0.964706 0.564706
+newmtl color_799
+Kd 0 1 0.231373
+newmtl color_800
+Kd 0.0980392 1 0.2
+newmtl color_801
+Kd 0 0.933333 0.533333
+newmtl color_802
+Kd 0.0666667 1 0.231373
+newmtl color_803
+Kd 0 0.866667 0.666667
+newmtl color_804
+Kd 0 0.964706 0.733333
+newmtl color_805
+Kd 0.133333 1 0.164706
+newmtl color_806
+Kd 0 0.898039 0.729412
+newmtl color_807
+Kd 0 0.898039 0.831373
+newmtl color_808
+Kd 0 0.964706 0.529412
+newmtl color_809
+Kd 0 0.831373 0.729412
+newmtl color_810
+Kd 0 0.529412 0.831373
+newmtl color_811
+Kd 0.129412 1 0.2
+newmtl color_812
+Kd 0.0980392 1 0.333333
+newmtl color_813
+Kd 0 0.831373 0.666667
+newmtl color_814
+Kd 0 0.964706 0.796078
+newmtl color_815
+Kd 0.0313725 1 0.462745
+newmtl color_816
+Kd 0.0313725 1 0.329412
+newmtl color_817
+Kd 0 0.564706 0.866667
+newmtl color_818
+Kd 0 0.596078 0.898039
+newmtl color_819
+Kd 0 1 0.2
+newmtl color_820
+Kd 0 1 0.933333
+newmtl color_821
+Kd 0 0.964706 0.698039
+newmtl color_822
+Kd 0.0666667 1 0.0627451
+newmtl color_823
+Kd 0.0313725 1 0.266667
+newmtl color_824
+Kd 0.0313725 1 0.466667
+newmtl color_825
+Kd 0 0.698039 0.831373
+newmtl color_826
+Kd 0.133333 1 0.0313725
+newmtl color_827
+Kd 0.0666667 1 0.133333
+newmtl color_828
+Kd 0.0313725 0.866667 0.333333
+newmtl color_829
+Kd 0.0313725 0.8 0.666667
+newmtl color_830
+Kd 0 0.964706 0.862745
+newmtl color_831
+Kd 0 0.964706 0.866667
+newmtl color_832
+Kd 0.0666667 1 0.364706
+newmtl color_833
+Kd 0.0666667 1 0.498039
+newmtl color_834
+Kd 0.164706 1 0.298039
+newmtl color_835
+Kd 0.196078 1 0.133333
+newmtl color_836
+Kd 0.0313725 1 0.6
+newmtl color_837
+Kd 0.133333 1 0.2
+newmtl color_838
+Kd 0.0980392 0.933333 0.333333
+newmtl color_839
+Kd 0 0.933333 0.866667
+newmtl color_840
+Kd 0 0.964706 0.764706
+newmtl color_841
+Kd 0 1 1
+newmtl color_842
+Kd 0 0.898039 0.8
+newmtl color_843
+Kd 0 0.933333 0.764706
+newmtl color_844
+Kd 0 0.333333 0.933333
+newmtl color_845
+Kd 0 1 0.929412
+newmtl color_846
+Kd 0 0.964706 0.933333
+newmtl color_847
+Kd 0 0.964706 1
+newmtl color_848
+Kd 0 0.898039 0.866667
+newmtl color_849
+Kd 0 0.964706 0.666667
+newmtl color_850
+Kd 0 0.8 0.929412
+newmtl color_851
+Kd 0 0.929412 0.933333
+newmtl color_852
+Kd 0 0.933333 0.666667
+newmtl color_853
+Kd 0 1 0.4
+newmtl color_854
+Kd 0 1 0.0980392
+newmtl color_855
+Kd 0 1 0.333333
+newmtl color_856
+Kd 0 0.796078 0.764706
+newmtl color_857
+Kd 0 0.929412 0.764706
+newmtl color_858
+Kd 0 0.929412 0.898039
+newmtl color_859
+Kd 0 1 0.0666667
+newmtl color_860
+Kd 0.431373 1 0
+newmtl color_861
+Kd 0.529412 1 0
+newmtl color_862
+Kd 0.333333 1 0
+newmtl color_863
+Kd 0.0313725 1 0.298039
+newmtl color_864
+Kd 0.0313725 1 0.364706
+newmtl color_865
+Kd 0.0627451 1 0.133333
+newmtl color_866
+Kd 0.0313725 1 0.133333
+newmtl color_867
+Kd 0.0313725 1 0
+newmtl color_868
+Kd 0 0.933333 0.596078
+newmtl color_869
+Kd 0 0.733333 0.8
+newmtl color_870
+Kd 0.0313725 1 0.231373
+newmtl color_871
+Kd 0.164706 1 0.0980392
+newmtl color_872
+Kd 0.533333 1 0
+newmtl color_873
+Kd 0.631373 1 0
+newmtl color_874
+Kd 0.662745 1 0
+newmtl color_875
+Kd 0.698039 1 0
+newmtl color_876
+Kd 0.4 1 0
+newmtl color_877
+Kd 0.0980392 1 0.2
+newmtl color_878
+Kd 0 0.933333 0.564706
+newmtl color_879
+Kd 0.0313725 1 0.498039
+newmtl color_880
+Kd 0.0627451 1 0.0666667
+newmtl color_881
+Kd 0.0313725 1 0.164706
+newmtl color_882
+Kd 0.0313725 1 0.0980392
+newmtl color_883
+Kd 0 0.929412 0.8
+newmtl color_884
+Kd 0 1 0.164706
+newmtl color_885
+Kd 0.0666667 1 0.0666667
+newmtl color_886
+Kd 0.266667 1 0.0313725
+newmtl color_887
+Kd 0.133333 1 0.329412
+newmtl color_888
+Kd 0.0980392 1 0.266667
+newmtl color_889
+Kd 0.0980392 1 0.133333
+newmtl color_890
+Kd 0.133333 1 0.133333
+newmtl color_891
+Kd 0.164706 1 0.133333
+newmtl color_892
+Kd 0.298039 1 0.133333
+newmtl color_893
+Kd 0.564706 1 0
+newmtl color_894
+Kd 0 1 0
+newmtl color_895
+Kd 0.0313725 0.666667 0.333333
+newmtl color_896
+Kd 0.0313725 0.666667 0.466667
+newmtl color_897
+Kd 0 0.498039 0.8
+newmtl color_898
+Kd 0.0980392 0.498039 0.666667
+newmtl color_899
+Kd 0.0980392 0.364706 0.666667
+newmtl color_900
+Kd 0.231373 0.698039 0.333333
+newmtl color_901
+Kd 0.133333 0.596078 0.666667
+newmtl color_902
+Kd 0.133333 0.796078 0.666667
+newmtl color_903
+Kd 0.133333 0.862745 0.666667
+newmtl color_904
+Kd 0.133333 0.964706 0.466667
+newmtl color_905
+Kd 0 0.729412 0.8
+newmtl color_906
+Kd 0 0.764706 0.564706
+newmtl color_907
+Kd 0 0.662745 0.764706
+newmtl color_908
+Kd 0 0.631373 0.764706
+newmtl color_909
+Kd 0 0.666667 0.8
+newmtl color_910
+Kd 0.231373 0.666667 0.333333
+newmtl color_911
+Kd 0.0980392 0.666667 0.333333
+newmtl color_912
+Kd 0 0.333333 0.666667
+newmtl color_913
+Kd 0.333333 0.666667 0.333333
+newmtl color_914
+Kd 0.133333 0.333333 0.666667
+newmtl color_915
+Kd 0.2 0.666667 0.333333
+newmtl color_916
+Kd 0.231373 0.898039 0.333333
+newmtl color_917
+Kd 0.298039 0.898039 0.333333
+newmtl color_918
+Kd 0.2 0.666667 0.466667
+newmtl color_919
+Kd 0.231373 1 0.133333
+newmtl color_920
+Kd 0.6 1 0
+newmtl color_921
+Kd 0.298039 1 0.133333
+newmtl color_922
+Kd 0 0.733333 0.564706
+newmtl color_923
+Kd 0 0.462745 0.898039
+newmtl color_924
+Kd 0 0.698039 0.796078
+newmtl color_925
+Kd 0.0313725 0.764706 0.666667
+newmtl color_926
+Kd 0.0313725 0.964706 0.364706
+newmtl color_927
+Kd 0.231373 1 0.0313725
+newmtl color_928
+Kd 0.4 1 0.0313725
+newmtl color_929
+Kd 0.666667 1 0
+newmtl color_930
+Kd 0 0.831373 0.529412
+newmtl color_931
+Kd 0 0.933333 0.698039
+newmtl color_932
+Kd 0 0.933333 0.6
+newmtl color_933
+Kd 0.0980392 0.933333 0.6
+newmtl color_934
+Kd 0.0980392 0.6 0.666667
+newmtl color_935
+Kd 0.231373 0.666667 0.333333
+newmtl color_936
+Kd 0.133333 1 0.196078
+newmtl color_937
+Kd 0.266667 1 0.164706
+newmtl color_938
+Kd 0.133333 1 0.298039
+newmtl color_939
+Kd 0 0.964706 0.533333
+newmtl color_940
+Kd 0.0313725 1 0.2
+newmtl color_941
+Kd 0.164706 1 0.164706
+newmtl color_942
+Kd 0.133333 1 0.564706
+newmtl color_943
+Kd 0.231373 1 0.266667
+newmtl color_944
+Kd 0.133333 1 0.462745
+newmtl color_945
+Kd 0 0.364706 0.964706
+newmtl color_946
+Kd 0.164706 0.698039 0.631373
+newmtl color_947
+Kd 0.231373 0.698039 0.333333
+newmtl color_948
+Kd 0.462745 1 0
+newmtl color_949
+Kd 0.698039 1 0
+newmtl color_950
+Kd 0.231373 1 0.0666667
+newmtl color_951
+Kd 0.262745 1 0.0666667
+newmtl color_952
+Kd 0.0980392 1 0.164706
+newmtl color_953
+Kd 0.0980392 1 0.262745
+newmtl color_954
+Kd 0 0.898039 0.596078
+newmtl color_955
+Kd 0.133333 0.866667 0.666667
+newmtl color_956
+Kd 0.133333 0.933333 0.631373
+newmtl color_957
+Kd 0.0666667 0.431373 0.666667
+newmtl color_958
+Kd 0.0666667 0.733333 0.533333
+newmtl color_959
+Kd 0.164706 1 0.2
+newmtl color_960
+Kd 0.0980392 0.831373 0.533333
+newmtl color_961
+Kd 0.0980392 1 0.4
+newmtl color_962
+Kd 0.364706 1 0
+newmtl color_963
+Kd 0.466667 1 0
+newmtl color_964
+Kd 0.533333 1 0
+newmtl color_965
+Kd 0.498039 1 0
+newmtl color_966
+Kd 0.0666667 0.6 0.666667
+newmtl color_967
+Kd 0.0666667 0.831373 0.666667
+newmtl color_968
+Kd 0.662745 1 0
+newmtl color_969
+Kd 0.0313725 0.764706 0.466667
+newmtl color_970
+Kd 0.0313725 0.698039 0.666667
+newmtl color_971
+Kd 0.0313725 0.831373 0.666667
+newmtl color_972
+Kd 0.164706 0.898039 0.333333
+newmtl color_973
+Kd 0.529412 1 0
+newmtl color_974
+Kd 0.396078 1 0
+newmtl color_975
+Kd 0.462745 1 0
+newmtl color_976
+Kd 0.329412 1 0
+newmtl color_977
+Kd 0.431373 1 0
+newmtl color_978
+Kd 0.564706 1 0
+newmtl color_979
+Kd 0.0666667 1 0.164706
+newmtl color_980
+Kd 0.0666667 1 0.0980392
+newmtl color_981
+Kd 0.0313725 1 0.0666667
+newmtl color_982
+Kd 0 1 0.266667
+newmtl color_983
+Kd 0 0.898039 0.862745
+newmtl color_984
+Kd 0 0.666667 0.866667
+newmtl color_985
+Kd 0 0.929412 0.866667
+newmtl color_986
+Kd 0 1 1
+newmtl color_987
+Kd 0.164706 1 0.298039
+newmtl color_988
+Kd 0.298039 1 0
+newmtl color_989
+Kd 0.596078 1 0
+newmtl color_990
+Kd 0.0666667 0.364706 0.666667
+newmtl color_991
+Kd 0 0.964706 0.431373
+newmtl color_992
+Kd 0 0.929412 0.831373
+newmtl color_993
+Kd 0.262745 1 0
+newmtl color_994
+Kd 0.0980392 1 0.329412
+newmtl color_995
+Kd 0.0313725 0.529412 0.666667
+newmtl color_996
+Kd 0.631373 1 0
+newmtl color_997
+Kd 0.0666667 1 0
+newmtl color_998
+Kd 0.2 1 0.0980392
+newmtl color_999
+Kd 0.0666667 1 0.329412
+newmtl color_1000
+Kd 0 0.933333 0.733333
+newmtl color_1001
+Kd 0.0980392 1 0.0313725
+newmtl color_1002
+Kd 0.0313725 1 0.0313725
+newmtl color_1003
+Kd 0.0666667 1 0.298039
+newmtl color_1004
+Kd 0.0313725 0.964706 0.333333
+newmtl color_1005
+Kd 0.0980392 1 0
+newmtl color_1006
+Kd 0 0.933333 0.862745
+newmtl color_1007
+Kd 0.133333 1 0.333333
+newmtl color_1008
+Kd 0.231373 1 0.2
+newmtl color_1009
+Kd 0 1 0.466667
+newmtl color_1010
+Kd 0 0.964706 0.8
+newmtl color_1011
+Kd 0 0.964706 0.929412
+newmtl color_1012
+Kd 0.133333 0.933333 0.564706
+newmtl color_1013
+Kd 0.133333 1 0.231373
+newmtl color_1014
+Kd 0 0.729412 0.831373
+newmtl color_1015
+Kd 0.133333 1 0
+newmtl color_1016
+Kd 0.196078 1 0
+newmtl color_1017
+Kd 0.0980392 1 0.0980392
+newmtl color_1018
+Kd 0.164706 1 0.133333
+newmtl color_1019
+Kd 0.0666667 0.8 0.4
+newmtl color_1020
+Kd 0.0980392 1 0.0666667
+newmtl color_1021
+Kd 0 0.866667 0.662745
+newmtl color_1022
+Kd 0.0627451 1 0
+newmtl color_1023
+Kd 0.0627451 1 0.164706
+newmtl color_1024
+Kd 0 0.933333 0.498039
+newmtl color_1025
+Kd 0 0.796078 0.866667
+newmtl color_1026
+Kd 0 0.964706 0.462745
+newmtl color_1027
+Kd 0 0.929412 0.698039
+newmtl color_1028
+Kd 0 0.964706 0.396078
+newmtl color_1029
+Kd 0.164706 1 0.0980392
+newmtl color_1030
+Kd 0.0980392 1 0.129412
+newmtl color_1031
+Kd 0.0980392 0.933333 0.364706
+newmtl color_1032
+Kd 0.231373 1 0
+newmtl color_1033
+Kd 0.333333 1 0
+newmtl color_1034
+Kd 0.364706 1 0.164706
+newmtl color_1035
+Kd 0.164706 1 0.298039
+newmtl color_1036
+Kd 0 0.964706 0.466667
+newmtl color_1037
+Kd 0 0.8 0.564706
+newmtl color_1038
+Kd 0.231373 1 0
+newmtl color_1039
+Kd 0.0666667 1 0.266667
+newmtl color_1040
+Kd 0 0.964706 0.8
+newmtl color_1041
+Kd 0.133333 1 0.266667
+newmtl color_1042
+Kd 0.164706 1 0.266667
+newmtl color_1043
+Kd 0.129412 1 0.266667
+newmtl color_1044
+Kd 0.329412 1 0
+newmtl color_1045
+Kd 0.231373 1 0.0980392
+newmtl color_1046
+Kd 0.0313725 1 0.4
+newmtl color_1047
+Kd 0 0.8 0.396078
+newmtl color_1048
+Kd 0.0666667 0.8 0.364706
+newmtl color_1049
+Kd 0.266667 1 0.0313725
+newmtl color_1050
+Kd 0.2 1 0.0627451
+newmtl color_1051
+Kd 0.0313725 1 0.329412
+newmtl color_1052
+Kd 0.364706 1 0
+newmtl color_1053
+Kd 0 0.964706 1
+newmtl color_1054
+Kd 0.196078 1 0
+newmtl color_1055
+Kd 0.164706 1 0.0313725
+newmtl color_1056
+Kd 0.333333 1 0.164706
+newmtl color_1057
+Kd 0.0313725 1 0.129412
+newmtl color_1058
+Kd 0.396078 1 0
+newmtl color_1059
+Kd 0.196078 1 0.133333
+newmtl color_1060
+Kd 0.133333 1 0.462745
+newmtl color_1061
+Kd 0 0.964706 0.698039
+newmtl color_1062
+Kd 0 0.662745 0.831373
+newmtl color_1063
+Kd 0 0.933333 0.431373
+newmtl color_1064
+Kd 0.0666667 1 0.333333
+newmtl color_1065
+Kd 0.0313725 0.8 0.564706
+newmtl color_1066
+Kd 0 0.8 0.596078
+newmtl color_1067
+Kd 0 0.898039 0.733333
+newmtl color_1068
+Kd 0 0.564706 0.8
+newmtl color_1069
+Kd 0.0980392 1 0.596078
+newmtl color_1070
+Kd 0.196078 1 0.298039
+newmtl color_1071
+Kd 0.298039 1 0
+newmtl color_1072
+Kd 0.196078 1 0.0313725
+newmtl color_1073
+Kd 0 0.666667 0.831373
+newmtl color_1074
+Kd 0.0313725 1 0.462745
+newmtl color_1075
+Kd 0.0313725 0.933333 0.564706
+newmtl color_1076
+Kd 0 0.698039 0.662745
+newmtl color_1077
+Kd 0.0627451 1 0.0313725
+newmtl color_1078
+Kd 0 0.964706 0.733333
+newmtl color_1079
+Kd 0 0.666667 0.796078
+newmtl color_1080
+Kd 0.0313725 1 0.0627451
+newmtl color_1081
+Kd 0.0313725 1 0.262745
+newmtl color_1082
+Kd 0 0.898039 0.796078
+newmtl color_1083
+Kd 0 0.866667 0.733333
+newmtl color_1084
+Kd 0.0666667 1 0.6
+newmtl color_1085
+Kd 0 0.666667 0.929412
+newmtl color_1086
+Kd 0 0.964706 0.862745
+newmtl color_1087
+Kd 0 0.462745 0.964706
+newmtl color_1088
+Kd 0.0313725 1 0.396078
+newmtl color_1089
+Kd 0.0313725 1 0.298039
+newmtl color_1090
+Kd 0.0627451 1 0.298039
+newmtl color_1091
+Kd 0.0313725 1 0.596078
+newmtl color_1092
+Kd 0.0313725 1 0.431373
+newmtl color_1093
+Kd 0.0313725 1 0.564706
+newmtl color_1094
+Kd 0 0.964706 1
+newmtl color_1095
+Kd 0 0.796078 0.733333
+newmtl color_1096
+Kd 0 0.964706 0.729412
+newmtl color_1097
+Kd 0.0666667 1 0.0313725
+newmtl color_1098
+Kd 0.0666667 1 0.533333
+newmtl color_1099
+Kd 0.133333 1 0.329412
+newmtl color_1100
+Kd 0.2 1 0.164706
+newmtl color_1101
+Kd 0.2 1 0.0313725
+newmtl color_1102
+Kd 0 1 1
+newmtl color_1103
+Kd 0.133333 0.964706 0.431373
+newmtl color_1104
+Kd 0.133333 0.8 0.431373
+newmtl color_1105
+Kd 0.133333 0.8 0.498039
+newmtl color_1106
+Kd 0 0.764706 0.529412
+newmtl color_1107
+Kd 0 0.764706 0.498039
+newmtl color_1108
+Kd 0 0.764706 0.4
+newmtl color_1109
+Kd 0.133333 0.964706 0.498039
+newmtl color_1110
+Kd 0.196078 1 0.0980392
+newmtl color_1111
+Kd 0.4 1 0
+newmtl color_1112
+Kd 0.333333 1 0
+newmtl color_1113
+Kd 0.266667 1 0
+newmtl color_1114
+Kd 0.129412 1 0
+newmtl color_1115
+Kd 0 0.8 0.431373
+newmtl color_1116
+Kd 0.6 1 0
+newmtl color_1117
+Kd 0.231373 1 0.164706
+newmtl color_1118
+Kd 0.0313725 0.764706 0.498039
+newmtl color_1119
+Kd 0 0.564706 0.831373
+newmtl color_1120
+Kd 0.0313725 0.662745 0.666667
+newmtl color_1121
+Kd 0.0313725 0.698039 0.364706
+newmtl color_1122
+Kd 0.0313725 0.964706 0.6
+newmtl color_1123
+Kd 0.0313725 1 0.333333
+newmtl color_1124
+Kd 0.0313725 0.964706 0.4
+newmtl color_1125
+Kd 0 0.631373 0.733333
+newmtl color_1126
+Kd 0.164706 1 0.0666667
+newmtl color_1127
+Kd 0.231373 1 0.0666667
+newmtl color_1128
+Kd 0.133333 1 0.0666667
+newmtl color_1129
+Kd 0.0666667 1 0.129412
+newmtl color_1130
+Kd 0.164706 1 0
+newmtl color_1131
+Kd 0 0.529412 0.764706
+newmtl color_1132
+Kd 0 0.764706 0.431373
+newmtl color_1133
+Kd 0 0.698039 0.364706
+newmtl color_1134
+Kd 0 0.396078 0.698039
+newmtl color_1135
+Kd 0 0.396078 0.666667
+newmtl color_1136
+Kd 0.0313725 0.666667 0.564706
+newmtl color_1137
+Kd 0.0313725 0.498039 0.666667
+newmtl color_1138
+Kd 0.0313725 0.831373 0.4
+newmtl color_1139
+Kd 0.0980392 0.564706 0.666667
+newmtl color_1140
+Kd 0.0980392 0.764706 0.333333
+newmtl color_1141
+Kd 0 0.364706 0.733333
+newmtl color_1142
+Kd 0 0.698039 0.466667
+newmtl color_1143
+Kd 0.0980392 0.8 0.4
+newmtl color_1144
+Kd 0.196078 0.8 0.333333
+newmtl color_1145
+Kd 0.0313725 0.729412 0.666667
+newmtl color_1146
+Kd 0.0666667 1 0.431373
+newmtl color_1147
+Kd 0.0313725 1 0
+newmtl color_1148
+Kd 0.129412 1 0.0313725
+newmtl color_1149
+Kd 0.262745 1 0
+newmtl color_1150
+Kd 0.164706 1 0.298039
+newmtl color_1151
+Kd 0.0980392 1 0.631373
+newmtl color_1152
+Kd 0.0666667 0.964706 0.4
+newmtl color_1153
+Kd 0.0666667 0.964706 0.631373
+newmtl color_1154
+Kd 0.196078 1 0.333333
+newmtl color_1155
+Kd 0.0980392 1 0.666667
+newmtl color_1156
+Kd 0.0980392 1 0.364706
+newmtl color_1157
+Kd 0.0980392 1 0.298039
+newmtl color_1158
+Kd 0.2 1 0.498039
+newmtl color_1159
+Kd 0.2 1 0.564706
+newmtl color_1160
+Kd 0.4 1 0.231373
+newmtl color_1161
+Kd 0.231373 1 0.231373
+newmtl color_1162
+Kd 0.662745 1 0
+newmtl color_1163
+Kd 0.0666667 1 0.2
+newmtl color_1164
+Kd 0 0.898039 0.698039
+newmtl color_1165
+Kd 0 0.898039 0.6
+newmtl color_1166
+Kd 0 0.866667 0.698039
+newmtl color_1167
+Kd 0 0.862745 0.8
+newmtl color_1168
+Kd 0 0.733333 0.662745
+newmtl color_1169
+Kd 0 0.733333 0.596078
+newmtl color_1170
+Kd 0 0.498039 0.764706
+newmtl color_1171
+Kd 0 0.8 0.729412
+newmtl color_1172
+Kd 0.0313725 1 0.396078
+newmtl color_1173
+Kd 0 0.733333 0.529412
+newmtl color_1174
+Kd 0 0.466667 0.764706
+newmtl color_1175
+Kd 0 0.4 0.898039
+newmtl color_1176
+Kd 0.2 1 0
+newmtl color_1177
+Kd 0.0666667 0.764706 0.431373
+newmtl color_1178
+Kd 0.164706 0.764706 0.333333
+newmtl color_1179
+Kd 0.262745 1 0
+newmtl color_1180
+Kd 0.0980392 1 0.0627451
+newmtl color_1181
+Kd 0.0313725 0.933333 0.498039
+newmtl color_1182
+Kd 0.164706 1 0.164706
+newmtl color_1183
+Kd 0 0.964706 0.666667
+newmtl color_1184
+Kd 0 0.866667 0.466667
+newmtl color_1185
+Kd 0 0.6 0.8
+newmtl color_1186
+Kd 0.0666667 1 0.564706
+newmtl color_1187
+Kd 0.0666667 0.831373 0.6
+newmtl color_1188
+Kd 0.0666667 0.831373 0.533333
+newmtl color_1189
+Kd 0.0666667 1 0.396078
+newmtl color_1190
+Kd 0.196078 1 0.2
+newmtl color_1191
+Kd 0.0980392 0.933333 0.466667
+newmtl color_1192
+Kd 0.196078 0.933333 0.333333
+newmtl color_1193
+Kd 0 0.933333 0.729412
+newmtl color_1194
+Kd 0 0.898039 0.529412
+newmtl color_1195
+Kd 0 0.898039 0.498039
+newmtl color_1196
+Kd 0 0.666667 0.733333
+newmtl color_1197
+Kd 0 0.666667 0.6
+newmtl color_1198
+Kd 0 0.466667 0.8
+newmtl color_1199
+Kd 0.0313725 0.8 0.666667
+newmtl color_1200
+Kd 0.129412 1 0.164706
+newmtl color_1201
+Kd 0.196078 1 0.164706
+newmtl color_1202
+Kd 0.0980392 1 0.431373
+newmtl color_1203
+Kd 0.0313725 0.933333 0.431373
+newmtl color_1204
+Kd 0 0.764706 0.333333
+newmtl color_1205
+Kd 0 0.764706 0.6
+newmtl color_1206
+Kd 0.0666667 1 0.466667
+newmtl color_1207
+Kd 0.164706 1 0.266667
+newmtl color_1208
+Kd 0.0313725 1 0.533333
+newmtl color_1209
+Kd 0.2 1 0.0666667
+newmtl color_1210
+Kd 0.298039 1 0
+newmtl color_1211
+Kd 0.364706 1 0.0313725
+newmtl color_1212
+Kd 0.466667 1 0.0313725
+newmtl color_1213
+Kd 0.764706 1 0
+newmtl color_1214
+Kd 0.898039 0.964706 0
+newmtl color_1215
+Kd 0.964706 0.898039 0
+newmtl color_1216
+Kd 0.698039 0.898039 0
+newmtl color_1217
+Kd 0.396078 0.933333 0
+newmtl color_1218
+Kd 0.0666667 1 0.498039
+newmtl color_1219
+Kd 0.329412 1 0
+newmtl color_1220
+Kd 0.298039 1 0
+newmtl color_1221
+Kd 0.529412 1 0
+newmtl color_1222
+Kd 0.231373 1 0
+newmtl color_1223
+Kd 0.0666667 1 0.364706
+newmtl color_1224
+Kd 0 0.564706 0.764706
+newmtl color_1225
+Kd 0 0.764706 0.596078
+newmtl color_1226
+Kd 0 0.898039 0.4
+newmtl color_1227
+Kd 0 0.898039 0.466667
+newmtl color_1228
+Kd 0 0.898039 0.662745
+newmtl color_1229
+Kd 0 0.796078 0.666667
+newmtl color_1230
+Kd 0.0313725 0.898039 0.498039
+newmtl color_1231
+Kd 0.0313725 0.698039 0.666667
+newmtl color_1232
+Kd 0 0.4 0.964706
+newmtl color_1233
+Kd 0.0980392 1 0.666667
+newmtl color_1234
+Kd 0.196078 1 0.333333
+newmtl color_1235
+Kd 0.262745 1 0
+newmtl color_1236
+Kd 0.196078 1 0.0666667
+newmtl color_1237
+Kd 0 0.666667 0.666667
+newmtl color_1238
+Kd 0 0.333333 0.8
+newmtl color_1239
+Kd 0 0.666667 0.564706
+newmtl color_1240
+Kd 0.631373 0.964706 0
+newmtl color_1241
+Kd 0.298039 1 0.2
+newmtl color_1242
+Kd 0.133333 1 0.333333
+newmtl color_1243
+Kd 0.164706 1 0.4
+newmtl color_1244
+Kd 0.196078 1 0.2
+newmtl color_1245
+Kd 0.0313725 1 0.533333
+newmtl color_1246
+Kd 0.0313725 1 0.6
+newmtl color_1247
+Kd 1 0.733333 0
+newmtl color_1248
+Kd 1 0.831373 0
+newmtl color_1249
+Kd 0.764706 0.831373 0
+newmtl color_1250
+Kd 0.564706 0.964706 0
+newmtl color_1251
+Kd 0.231373 1 0.133333
+newmtl color_1252
+Kd 0.831373 0.964706 0
+newmtl color_1253
+Kd 0.529412 1 0
+newmtl color_1254
+Kd 0.0313725 0.898039 0.666667
+newmtl color_1255
+Kd 0.0313725 0.964706 0.431373
+newmtl color_1256
+Kd 0.129412 1 0.0980392
+newmtl color_1257
+Kd 0.0980392 0.964706 0.431373
+newmtl color_1258
+Kd 0.196078 0.964706 0.333333
+newmtl color_1259
+Kd 0.0980392 0.964706 0.364706
+newmtl color_1260
+Kd 0 0.929412 0.764706
+newmtl color_1261
+Kd 0.0313725 1 0.364706
+newmtl color_1262
+Kd 0.0313725 0.831373 0.4
+newmtl color_1263
+Kd 0.129412 0.831373 0.333333
+newmtl color_1264
+Kd 0.0980392 0.831373 0.564706
+newmtl color_1265
+Kd 0.0980392 1 0.462745
+newmtl color_1266
+Kd 0 0.333333 0.898039
+newmtl color_1267
+Kd 1 0.764706 0
+newmtl color_1268
+Kd 1 0.898039 0
+newmtl color_1269
+Kd 0.698039 1 0
+newmtl color_1270
+Kd 0.662745 1 0
+newmtl color_1271
+Kd 1 0.862745 0
+newmtl color_1272
+Kd 0.964706 0.964706 0
+newmtl color_1273
+Kd 0 0.831373 0.466667
+newmtl color_1274
+Kd 0.231373 1 0.298039
+newmtl color_1275
+Kd 0.164706 1 0.298039
+newmtl color_1276
+Kd 0.964706 0.964706 0
+newmtl color_1277
+Kd 1 0.964706 0
+newmtl color_1278
+Kd 0.733333 1 0
+newmtl color_1279
+Kd 0.564706 1 0
+newmtl color_1280
+Kd 0.231373 1 0.164706
+newmtl color_1281
+Kd 0.164706 1 0.262745
+newmtl color_1282
+Kd 0.262745 1 0
+newmtl color_1283
+Kd 0.396078 1 0
+newmtl color_1284
+Kd 0.431373 1 0
+newmtl color_1285
+Kd 0.364706 1 0
+newmtl color_1286
+Kd 0.862745 1 0
+newmtl color_1287
+Kd 0.796078 1 0
+newmtl color_1288
+Kd 0.462745 1 0
+newmtl color_1289
+Kd 0.231373 1 0
+newmtl color_1290
+Kd 0.196078 1 0.231373
+newmtl color_1291
+Kd 0.133333 1 0.0980392
+newmtl color_1292
+Kd 0.133333 1 0.2
+newmtl color_1293
+Kd 0.133333 1 0.133333
+newmtl color_1294
+Kd 0 0.898039 0.631373
+newmtl color_1295
+Kd 0 0.898039 0.666667
+newmtl color_1296
+Kd 0 0.662745 0.733333
+newmtl color_1297
+Kd 0 0.964706 0.4
+newmtl color_1298
+Kd 0.964706 0.6 0
+newmtl color_1299
+Kd 0.729412 0.866667 0
+newmtl color_1300
+Kd 0.396078 1 0.164706
+newmtl color_1301
+Kd 0.0980392 0.8 0.498039
+newmtl color_1302
+Kd 1 0.466667 0
+newmtl color_1303
+Kd 1 0.631373 0
+newmtl color_1304
+Kd 1 0.764706 0
+newmtl color_1305
+Kd 0.831373 0.898039 0
+newmtl color_1306
+Kd 0.596078 1 0
+newmtl color_1307
+Kd 0.498039 1 0
+newmtl color_1308
+Kd 0.262745 1 0.0666667
+newmtl color_1309
+Kd 0.0313725 0.933333 0.4
+newmtl color_1310
+Kd 0.0980392 0.933333 0.631373
+newmtl color_1311
+Kd 0.0313725 0.866667 0.666667
+newmtl color_1312
+Kd 0.129412 0.933333 0.333333
+newmtl color_1313
+Kd 1 0.733333 0
+newmtl color_1314
+Kd 1 0.666667 0
+newmtl color_1315
+Kd 1 0.533333 0
+newmtl color_1316
+Kd 0.964706 0.666667 0
+newmtl color_1317
+Kd 0.929412 0.733333 0
+newmtl color_1318
+Kd 0.596078 1 0.164706
+newmtl color_1319
+Kd 0.964706 0.929412 0
+newmtl color_1320
+Kd 0.964706 0.831373 0
+newmtl color_1321
+Kd 1 0.596078 0
+newmtl color_1322
+Kd 1 0.498039 0
+newmtl color_1323
+Kd 1 0.329412 0
+newmtl color_1324
+Kd 1 0.564706 0
+newmtl color_1325
+Kd 0.666667 0.6 0.333333
+newmtl color_1326
+Kd 0.466667 0.666667 0.333333
+newmtl color_1327
+Kd 0.133333 0.466667 0.666667
+newmtl color_1328
+Kd 0.133333 0.431373 0.666667
+newmtl color_1329
+Kd 0.0666667 0.698039 0.666667
+newmtl color_1330
+Kd 0.964706 0.866667 0
+newmtl color_1331
+Kd 0.831373 0.862745 0
+newmtl color_1332
+Kd 0.831373 0.964706 0
+newmtl color_1333
+Kd 0.396078 1 0
+newmtl color_1334
+Kd 0.964706 0.929412 0
+newmtl color_1335
+Kd 0.862745 0.964706 0
+newmtl color_1336
+Kd 0.898039 0.964706 0
+newmtl color_1337
+Kd 0.329412 1 0.231373
+newmtl color_1338
+Kd 0.564706 1 0.231373
+newmtl color_1339
+Kd 0.298039 1 0.231373
+newmtl color_1340
+Kd 0.298039 1 0.0666667
+newmtl color_1341
+Kd 0 0.933333 0.466667
+newmtl color_1342
+Kd 0 0.529412 0.698039
+newmtl color_1343
+Kd 0 0.764706 0.631373
+newmtl color_1344
+Kd 0 0.564706 0.666667
+newmtl color_1345
+Kd 0 0.466667 0.666667
+newmtl color_1346
+Kd 0.631373 1 0
+newmtl color_1347
+Kd 0.2 1 0
+newmtl color_1348
+Kd 0.0980392 1 0
+newmtl color_1349
+Kd 0.0666667 0.898039 0.666667
+newmtl color_1350
+Kd 0.0666667 0.964706 0.533333
+newmtl color_1351
+Kd 0.0666667 1 0.431373
+newmtl color_1352
+Kd 0.364706 1 0.0666667
+newmtl color_1353
+Kd 0.133333 1 0.164706
+newmtl color_1354
+Kd 0.298039 1 0.0980392
+newmtl color_1355
+Kd 0.0980392 1 0.164706
+newmtl color_1356
+Kd 0 0.898039 0.733333
+newmtl color_1357
+Kd 0 0.729412 0.733333
+newmtl color_1358
+Kd 0.0313725 1 0
+newmtl color_1359
+Kd 0.0313725 1 0.0980392
+newmtl color_1360
+Kd 0.133333 1 0.0627451
+newmtl color_1361
+Kd 0.133333 1 0.0313725
+newmtl color_1362
+Kd 0.0313725 1 0.498039
+newmtl color_1363
+Kd 0.0313725 1 0.333333
+newmtl color_1364
+Kd 0.0980392 1 0.0666667
+newmtl color_1365
+Kd 0.0980392 0.8 0.466667
+newmtl color_1366
+Kd 0.631373 0.666667 0.333333
+newmtl color_1367
+Kd 0.298039 0.733333 0.498039
+newmtl color_1368
+Kd 0 0.862745 0.764706
+newmtl color_1369
+Kd 1 0.431373 0
+newmtl color_1370
+Kd 1 0.164706 0
+newmtl color_1371
+Kd 1 0.196078 0
+newmtl color_1372
+Kd 0.8 0.733333 0
+newmtl color_1373
+Kd 1 0.698039 0
+newmtl color_1374
+Kd 1 0.596078 0
+newmtl color_1375
+Kd 1 0.529412 0
+newmtl color_1376
+Kd 1 0.462745 0
+newmtl color_1377
+Kd 1 0.329412 0
+newmtl color_1378
+Kd 1 0.364706 0
+newmtl color_1379
+Kd 1 0.231373 0
+newmtl color_1380
+Kd 1 0.262745 0
+newmtl color_1381
+Kd 0.8 0.764706 0
+newmtl color_1382
+Kd 0.466667 0.662745 0.333333
+newmtl color_1383
+Kd 1 0.729412 0
+newmtl color_1384
+Kd 1 0.929412 0
+newmtl color_1385
+Kd 0.964706 0.631373 0
+newmtl color_1386
+Kd 0.964706 0.662745 0
+newmtl color_1387
+Kd 1 0.596078 0
+newmtl color_1388
+Kd 1 0.698039 0
+newmtl color_1389
+Kd 0.933333 0.866667 0
+newmtl color_1390
+Kd 0.933333 0.764706 0
+newmtl color_1391
+Kd 0.964706 0.831373 0
+newmtl color_1392
+Kd 0.898039 0.8 0
+newmtl color_1393
+Kd 0.933333 0.698039 0
+newmtl color_1394
+Kd 0.866667 0.898039 0
+newmtl color_1395
+Kd 0.933333 0.831373 0
+newmtl color_1396
+Kd 0.866667 0.933333 0
+newmtl color_1397
+Kd 0.0980392 1 0.231373
+newmtl color_1398
+Kd 0.0980392 0.933333 0.333333
+newmtl color_1399
+Kd 0.0666667 1 0.133333
+newmtl color_1400
+Kd 0 0.8 0.733333
+newmtl color_1401
+Kd 0 0.533333 0.831373
+newmtl color_1402
+Kd 0.133333 1 0.0666667
+newmtl color_1403
+Kd 0.133333 1 0.231373
+newmtl color_1404
+Kd 0.0666667 1 0.462745
+newmtl color_1405
+Kd 0.0980392 1 0.4
+newmtl color_1406
+Kd 0.2 1 0.2
+newmtl color_1407
+Kd 0.266667 1 0
+newmtl color_1408
+Kd 0.333333 1 0
+newmtl color_1409
+Kd 0.266667 1 0.133333
+newmtl color_1410
+Kd 0.133333 1 0.266667
+newmtl color_1411
+Kd 0 0.8 0.698039
+newmtl color_1412
+Kd 0.133333 1 0.4
+newmtl color_1413
+Kd 0.266667 1 0.2
+newmtl color_1414
+Kd 0.133333 1 0.364706
+newmtl color_1415
+Kd 0.133333 1 0.298039
+newmtl color_1416
+Kd 0.0666667 1 0.262745
+newmtl color_1417
+Kd 0.2 1 0.133333
+newmtl color_1418
+Kd 0.0666667 1 0.364706
+newmtl color_1419
+Kd 0.0666667 1 0.129412
+newmtl color_1420
+Kd 0.0666667 1 0.462745
+newmtl color_1421
+Kd 1 0.129412 0
+newmtl color_1422
+Kd 1 0.529412 0
+newmtl color_1423
+Kd 1 0.662745 0
+newmtl color_1424
+Kd 1 0.596078 0
+newmtl color_1425
+Kd 0.533333 1 0.0666667
+newmtl color_1426
+Kd 0.431373 1 0.0666667
+newmtl color_1427
+Kd 0.0666667 1 0.266667
+newmtl color_1428
+Kd 0.133333 1 0.0980392
+newmtl color_1429
+Kd 0.0666667 1 0.196078
+newmtl color_1430
+Kd 0 0.898039 0.764706
+newmtl color_1431
+Kd 0.0313725 1 0.364706
+newmtl color_1432
+Kd 0.0666667 1 0.0980392
+newmtl color_1433
+Kd 0.0313725 1 0.196078
+newmtl color_1434
+Kd 0.933333 0.796078 0
+newmtl color_1435
+Kd 0.764706 1 0
+newmtl color_1436
+Kd 0.898039 0.933333 0
+newmtl color_1437
+Kd 0.8 0.933333 0
+newmtl color_1438
+Kd 0.866667 0.831373 0
+newmtl color_1439
+Kd 0.6 0.898039 0
+newmtl color_1440
+Kd 0.431373 0.898039 0
+newmtl color_1441
+Kd 0.0980392 0.698039 0.333333
+newmtl color_1442
+Kd 0.0313725 0.698039 0.333333
+newmtl color_1443
+Kd 0 0.698039 0.533333
+newmtl color_1444
+Kd 0.0666667 1 0.298039
+newmtl color_1445
+Kd 0.698039 1 0
+newmtl color_1446
+Kd 0.431373 1 0.0313725
+newmtl color_1447
+Kd 0.631373 1 0
+newmtl color_1448
+Kd 0.529412 1 0
+newmtl color_1449
+Kd 0 0.933333 0.4
+newmtl color_1450
+Kd 0.0313725 1 0.0666667
+newmtl color_1451
+Kd 0.0313725 1 0.164706
+newmtl color_1452
+Kd 0 0.466667 0.898039
+newmtl color_1453
+Kd 0.231373 1 0.262745
+newmtl color_1454
+Kd 0.231373 0.698039 0.431373
+newmtl color_1455
+Kd 0.564706 0.662745 0.333333
+newmtl color_1456
+Kd 0 0.729412 0.764706
+newmtl color_1457
+Kd 0 0.596078 0.764706
+newmtl color_1458
+Kd 0 0.462745 0.764706
+newmtl color_1459
+Kd 0.898039 0.729412 0
+newmtl color_1460
+Kd 0.564706 0.764706 0.0313725
+newmtl color_1461
+Kd 0.666667 0.564706 0.0313725
+newmtl color_1462
+Kd 0.666667 0.764706 0.0313725
+newmtl color_1463
+Kd 0.231373 1 0.196078
+newmtl color_1464
+Kd 0.364706 0.964706 0.0313725
+newmtl color_1465
+Kd 0.698039 0.831373 0
+newmtl color_1466
+Kd 0.396078 0.898039 0
+newmtl color_1467
+Kd 0.4 1 0
+newmtl color_1468
+Kd 0.631373 1 0
+newmtl color_1469
+Kd 0 0.662745 0.666667
+newmtl color_1470
+Kd 0.0627451 1 0
+newmtl color_1471
+Kd 0.298039 1 0
+newmtl color_1472
+Kd 0.662745 1 0
+newmtl color_1473
+Kd 0.698039 1 0
+newmtl color_1474
+Kd 0.133333 1 0.298039
+newmtl color_1475
+Kd 0.196078 1 0.0666667
+newmtl color_1476
+Kd 0.129412 1 0.0666667
+newmtl color_1477
+Kd 0.231373 1 0.0313725
+newmtl color_1478
+Kd 0.0980392 1 0.0313725
+newmtl color_1479
+Kd 0.129412 1 0
+newmtl color_1480
+Kd 0.564706 0.964706 0
+newmtl color_1481
+Kd 0.796078 0.964706 0
+newmtl color_1482
+Kd 0.898039 0.964706 0
+newmtl color_1483
+Kd 0 0.396078 0.898039
+newmtl color_1484
+Kd 0.0313725 1 0.129412
+newmtl color_1485
+Kd 0.0313725 1 0.0313725
+newmtl color_1486
+Kd 0.666667 0.964706 0
+newmtl color_1487
+Kd 0.898039 1 0
+newmtl color_1488
+Kd 0.862745 1 0
+newmtl color_1489
+Kd 1 0.964706 0
+newmtl color_1490
+Kd 0.866667 1 0
+newmtl color_1491
+Kd 0.764706 1 0
+newmtl color_1492
+Kd 0.2 1 0.2
+newmtl color_1493
+Kd 0.6 1 0
+newmtl color_1494
+Kd 0.666667 1 0
+newmtl color_1495
+Kd 0.596078 1 0.0666667
+newmtl color_1496
+Kd 0 0.596078 0.8

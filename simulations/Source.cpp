@@ -133,7 +133,7 @@ int main(int argc, char**argv)
 	//testCylinderFromPath();
 	double shift = pi / 2;
 	string name = "testCylinderCycleHalf";
-	TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 2, 3, 1);
+	TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 16, 3, 1);
 	//TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 16, 1, 4 * pi);
 	//TubularObject obj = TestingCylinder::testCylinderFromFile("centerLineAndRadius.txt", shift);
 	//TubularObject obj("rings/part_12.ply", "Normals.txt");
@@ -151,8 +151,8 @@ int main(int argc, char**argv)
 	////
 	vector<double> measure1(obj.vertices.size(), 1);
 	TestingCylinder::simulateFlyOverPerspectiveMeasure(obj, edges, measure1, shift, name);
-	obj.colorVertices(measure1, Misc::getColorPalette(), false);
-	obj.writePLYFileColorVertices(name + "_colors_flyover", false, true);
+	obj.colorVertices(measure1, Misc::getColorPalette(), true);
+	obj.writePLYFileColorVertices(name + "_colors_flyover", true, true);
 	//
 	//vector<double> measure2(obj.vertices.size(), 1);
 	//TestingCylinder::simulateFlythrough(obj, edges, measure2, shift, name);

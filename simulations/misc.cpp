@@ -9,7 +9,7 @@ bool Misc::checkIntersection(TubularObject& tubular, int halfTag, const int vInd
 	// for the line
 	Point3D dir = tubular.vertices[vInd].pt - loc;
 	double length = dir.getL2Norm();
-	dir.normalize();
+	//dir.normalize();
 
 	const vector<Face> &faces = (tubular.faces);
 	//const int size = faces.size();
@@ -21,34 +21,39 @@ bool Misc::checkIntersection(TubularObject& tubular, int halfTag, const int vInd
 		for (int i = 0; i < size; i++)
 		{
 			int f = tmpM[i].first;
-
-			Face *face = &(tubular.faces[f]);
-			//// check only if this is one of the correct faces to use
-			// not one of the faces of this vertex
-			double denom = dir.dot(face->normal);
-			// if parallel the denom (dot product 
-			if (denom > -epsilon && denom < epsilon)
+			if (tubular.vertexFaces[vInd].find(f) == tubular.vertexFaces[vInd].end())
 			{
-				Point3D tmpN = *face->points[0] - loc;
-				double numerator = tmpN.dot(face->normal);
-
-				/*Point3D* p0 = face->points[0];
-				Point3D* normal = &(face->normal);
-				double numeratorx = (p0->x - loc.x) * normal->x;
-				double numeratory = (p0->x - loc.y) * normal->y;
-				double numeratorz = (p0->x - loc.z) * normal->z;
-
-				double numerator = numeratorx + numeratory + numeratorz;*/
-
-				// if the point within the line segment
-				if (numerator > 0 && numerator <= (length * denom))
+				Face *face = &(tubular.faces[f]);
+				//// check only if this is one of the correct faces to use
+				// not one of the faces of this vertex
+				double denom = dir.dot(face->normal);
+				// if parallel the denom (dot product 
+				if (denom < -epsilon || denom > epsilon)
 				{
-					double t = numerator / denom;
-					Point3D interPt = (dir * t) + loc;
-					//intersection = Misc::isLineIntersectPlan(interPt, face);
-					if (face->isPointInside(interPt))
+					Point3D tmpN = *face->points[0] - loc;
+					double numerator = tmpN.dot(face->normal);
+
+					/*Point3D* p0 = face->points[0];
+					Point3D* normal = &(face->normal);
+					double numeratorx = (p0->x - loc.x) * normal->x;
+					double numeratory = (p0->x - loc.y) * normal->y;
+					double numeratorz = (p0->x - loc.z) * normal->z;
+
+					double numerator = numeratorx + numeratory + numeratorz;*/
+
+					// if the point within the line segment
+					//if (numerator > 0 && numerator <= (length * denom))
 					{
-						return true;
+						double t = numerator / denom;
+						if (t >= 0 && t <= 1)
+						{
+							Point3D interPt = (dir * t) + loc;
+							//intersection = Misc::isLineIntersectPlan(interPt, face);
+							if (face->isPointInside(interPt))
+							{
+								return true;
+							}
+						}
 					}
 				}
 			}
@@ -108,13 +113,14 @@ void Misc::calcVisMeasurePerspective(
 	const int endPath = path.size();
 	const int stepPath = 1;
 	const double camTest = cos(cam->getFovH() / 2);
-	
+	int facesSize = tubular.faces.size();
 #pragma omp parallel for
 	for (int i = startPath; i < endPath; i += stepPath)
 	{
 		const Point3D loc = path[i];
 		vector<pair<int, double> > tmpM;
-		for (int jj = 0; jj < tubular.faces.size(); jj++)
+		//for (int jj = facesSize - 3; jj < facesSize; jj++)
+		for (int jj = 0; jj < facesSize; jj++)
 		{
 			if (halfTag == 0 || halfTag == tubular.faces[jj].tag)
 			{
@@ -144,7 +150,7 @@ void Misc::calcVisMeasurePerspective(
 				}
 				// check if the point is in the View Frustum
 				double normalDotCameraAxis = vectorFromCameraToVertex.dot(vertexNormal);
-				if (normalDotCameraAxis > 0)
+				if (normalDotCameraAxis > 0 && backfaceCull)
 				{
 					continue;
 				}

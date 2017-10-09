@@ -69,14 +69,14 @@ vector<Vertex3D> TestingCylinder::createCylinderFromPath(double cylinderR, doubl
 vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, double rotShift, string oupName)
 {
 	PerspectiveCamera cam;
-	cam.near = cylinder.maxRadius;
-	cam.far = 100;// cylinder.maxRadius * 7 + epsilon;
-	cam.sy = cam.sx = 10 * cylinder.maxRadius;
+	cam.near = 0;// 1.5 * cylinder.maxRadius;
+	cam.far = cylinder.maxRadius * 2.5;
+	cam.sy = cam.sx = 20 * cylinder.maxRadius;
 	
 	//cam.fov = pi / 2;
 	//cam.setFocal(3 * cylinder.maxRadius);
-	cam.setFovH(2 * pi / 3);
-	cam.setFovV(2 * pi / 3);
+	cam.setFovH(pi / 2);
+	cam.setFovV(pi / 2);
 
 	cout << "cam.getFovH() = " << cam.getFovH() * 180 / pi << endl;
 	cout << "cam.getFocalLength() = " << cam.getFocalLength() << endl;
@@ -84,11 +84,11 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 	vector<Point3D> lookAt1, lookAt2;
 	vector<Point3D> up1, up2;
 
-	//for (int i = 0; i < cylinder.xAxis.size(); i++)
-	for(int i = 0;i < 1;i++)
+	for (int i = 0; i < cylinder.xAxis.size(); i++)
+	//for(int i = 0;i < 1;i++)
 	{
-		path1.push_back(cylinder.calcSurfacePointLocation(i, rotShift - pi/2, cylinder.maxRadius));
-		path2.push_back(cylinder.calcSurfacePointLocation(i, rotShift + pi / 2, cylinder.maxRadius));
+		path1.push_back(cylinder.calcSurfacePointLocation(i, rotShift - pi/2, 1.5 * cylinder.maxRadius));
+		path2.push_back(cylinder.calcSurfacePointLocation(i, rotShift + pi / 2, 1.5 * cylinder.maxRadius));
 
 		Point3D look1 = cylinder.centerline[i] - *(path1.end() - 1);
 		look1.normalize();
@@ -101,8 +101,8 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 		up1.push_back(cylinder.tangents[i]);
 		up2.push_back(cylinder.tangents[i]);
 	}
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path1, lookAt1, m_p_data);
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path2, lookAt2, m_p_data);
+	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path1, lookAt1, m_p_data, true);
+	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path2, lookAt2, m_p_data, true);
 
 	/*Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
 	Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);*/
@@ -318,14 +318,14 @@ TubularObject TestingCylinder::testCylinderFromPath(double shift, double rotStep
 	vector<double> cylR;
 	for (double x = 0; x < length; x += (rotStep * cylRadius))
 	{
-		path.push_back({ x, sin(x) , 0 }); // centerline sine
-		//path.push_back({x, 0 , 0 });
+		//path.push_back({ x, sin(x) , 0 }); // centerline sine
+		path.push_back({x, 0 , 0 });
 		cylR.push_back(cylRadius + 0.2 * sin(5 * x));
 		//cylR.push_back(cylRadius + 0.5 * sin(5 * x)); // for the simple center
 		//cylR.push_back(cylRadius + 0.35 * sin(5 * x)); // for the sine center
 	}
-	TubularObject cyl0(cylR, rotStep, path, false, shift);
-	//TubularObject cyl0(cylRadius, rotStep, path, false, shift);
+	//TubularObject cyl0(cylR, rotStep, path, false, shift);
+	TubularObject cyl0(cylRadius, rotStep, path, false, shift);
 
 	return cyl0;
 }

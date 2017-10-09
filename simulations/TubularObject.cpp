@@ -758,8 +758,11 @@ bool Face::isPointInside(const Point3D & interPt) const
 		
 		accumlatedArea = a + b + c;
 	}
-	double test = epsilon - (accumlatedArea - 2 * totalArea);
-	return (test < 2 * epsilon);
+	//double test = epsilon - (accumlatedArea - 2 * totalArea);
+	//return (test < 2 * epsilon);
+	//return (abs(accumlatedArea - 2 * totalArea) < epsilon);
+	double test = accumlatedArea - 2 * totalArea;
+	return (test > -epsilon && test < epsilon);
 }
 
 ostream & operator<<(ostream & ostr, Face & fc)

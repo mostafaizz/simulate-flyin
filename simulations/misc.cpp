@@ -178,7 +178,7 @@ void Misc::calcVisMeasurePerspective(
 					if (tmpM[f].second < output[vInd])
 					{
 						// check if there is intersection between camera line and cells other than this point cell
-						if (!checkIntersection(tubular, halfTag, vInd, loc, tmpM))
+						//if (!checkIntersection(tubular, halfTag, vInd, loc, tmpM))
 						{
 							// there is intersection and we can not get this vertex from this
 							output[vInd] = tmpM[f].second;
@@ -287,7 +287,7 @@ void Misc::calcVisMeasurePerspective1(
 							//{
 								// there is no intersection
 
-							//	output[vInd] = m_p_temp;
+								output[vInd] = m_p_temp;
 							//}
 						}
 					}

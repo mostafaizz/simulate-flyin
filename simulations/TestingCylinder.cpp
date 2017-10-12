@@ -1,6 +1,7 @@
 #include "TestingCylinder.h"
 #include <iostream>
 
+
 using namespace std;
 
 /*
@@ -68,6 +69,8 @@ vector<Vertex3D> TestingCylinder::createCylinderFromPath(double cylinderR, doubl
 // the rotational shift is used to rotate the cutting plane of for the Fly over
 vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, double rotShift, string oupName)
 {
+	auto start = std::chrono::system_clock::now();
+
 	PerspectiveCamera cam;
 	cam.near = 0;// 1.5 * cylinder.maxRadius;
 	cam.far = cylinder.maxRadius * 2.5;
@@ -119,12 +122,22 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 		}
 		oupFlat.close();
 	}
+	printTime(start, __FUNCTION__);
+	
 	return cumMeasure;
 }
-
+void TestingCylinder::printTime(std::chrono::time_point<std::chrono::system_clock> start, std::string name)
+{
+	auto end = std::chrono::system_clock::now();
+	std::chrono::duration<double> elapsed_seconds = end - start;
+	std::time_t end_time = std::chrono::system_clock::to_time_t(end);
+	std::cout << "finished computation of " << name << " at " << std::ctime(&end_time)
+		<< "elapsed time: " << elapsed_seconds.count() << "s\n";
+}
 // the rotational shift is used to rotate the camera
 vector<double> TestingCylinder::simulateFlythrough(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, double rotShift, string oupName)
 {
+	auto start = std::chrono::system_clock::now();
 	PerspectiveCamera cam;
 	cam.near = 0.1;// cylinder.maxRadius - epsilon;
 	cam.far = 75;// cylinder.maxRadius * 7 + epsilon;
@@ -162,6 +175,8 @@ vector<double> TestingCylinder::simulateFlythrough(TubularObject & cylinder, vec
 		}
 		oupFlyt.close();
 	}
+
+	printTime(start, __FUNCTION__);
 	return cumMeasure;
 }
 
@@ -169,6 +184,8 @@ vector<double> TestingCylinder::simulateFlythrough(TubularObject & cylinder, vec
 // the rotational shift is used to rotate the camera
 vector<double> TestingCylinder::simulateFlythroughReverese(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, double rotShift, string oupName)
 {
+	auto start = std::chrono::system_clock::now();
+
 	PerspectiveCamera cam;
 	cam.near = 0.1;// cylinder.maxRadius - epsilon;
 	cam.far = 75;// cylinder.maxRadius * 7 + epsilon;
@@ -206,6 +223,9 @@ vector<double> TestingCylinder::simulateFlythroughReverese(TubularObject & cylin
 		}
 		oupFlyt.close();
 	}
+
+	printTime(start, __FUNCTION__);
+
 	return cumMeasure;
 }
 
@@ -213,6 +233,9 @@ vector<double> TestingCylinder::simulateFlythroughReverese(TubularObject & cylin
 
 vector<double> TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, string oupName)
 {
+
+	auto start = std::chrono::system_clock::now();
+
 	EquirectangularCamera cam;
 	cam.near = 0.01;
 	cam.far = 2 * cylinder.maxRadius;
@@ -241,6 +264,9 @@ vector<double> TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure
 		}
 		oupFlat.close();
 	}
+
+	printTime(start, __FUNCTION__);
+
 	return cumMeasure;
 }
 

@@ -133,10 +133,10 @@ int main(int argc, char**argv)
 	//testCylinderFromPath();
 	double shift = pi / 2;
 	string name = "testCylinderCycleHalf";
-	TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 16, 3, 1);
+	//TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 16, 3, 1);
 	//TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 16, 1, 4 * pi);
 	//TubularObject obj = TestingCylinder::testCylinderFromFile("centerLineAndRadius.txt", shift);
-	//TubularObject obj("rings/part_12.ply", "Normals.txt");
+	TubularObject obj("rings/part_12.ply", "Normals.txt");
 	//TubularObject obj("cube.ply", "centerLine.txt");
 	//obj.writePLYFileColorVertices("test.ply", false, true);
 
@@ -145,7 +145,6 @@ int main(int argc, char**argv)
 	
 	/*vector<double> measure(obj.vertices.size(), 1);
 	TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure(obj, edges, measure, name);
-	
 	obj.colorVertices(measure, Misc::getColorPalette(), true);
 	obj.writePLYFileColorVertices(name + "_colors_flat", false, true);*/
 	////

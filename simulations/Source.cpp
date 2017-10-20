@@ -122,7 +122,18 @@ void testLineCellIntersection()
 }
 int main(int argc, char**argv)
 {
-	
+	string objPath = "rings/part_12.ply";
+	string normalFile = "Normals.txt";
+	string name = "testCylinderCycleHalf";
+	if (argc > 1)
+	{
+		objPath = argv[1];
+		name = objPath;
+	}
+	if (argc > 2)
+	{
+		normalFile = argv[2];
+	}
 	vector<double> edges;
 	for (double e = -1; e <= 0 + epsilon; e += 0.05) {
 		edges.push_back(e);
@@ -131,22 +142,18 @@ int main(int argc, char**argv)
 	//testSharpCylinder(edges);
 	//TestingVerticalCylinder::testSineSurfaceCylinder(edges);
 	//testCylinderFromPath();
-	double shift = pi / 2;
-	string name = "testCylinderCycleHalf";
+	double shift = 0;// pi / 2;
+	
 	//TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 16, 3, 1);
-	//TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 16, 1, 4 * pi);
+	//TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 20, 1, 4 * pi);
 	//TubularObject obj = TestingCylinder::testCylinderFromFile("centerLineAndRadius.txt", shift);
-	TubularObject obj("rings/part_12.ply", "Normals.txt");
+	TubularObject obj(objPath, normalFile);
 	//TubularObject obj("cube.ply", "centerLine.txt");
 	//obj.writePLYFileColorVertices("test.ply", false, true);
 
 	
 	//obj.writeVerticesToFile(name + "_norms.csv");
 	
-	/*vector<double> measure(obj.vertices.size(), 1);
-	TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure(obj, edges, measure, name);
-	obj.colorVertices(measure, Misc::getColorPalette(), true);
-	obj.writePLYFileColorVertices(name + "_colors_flat", false, true);*/
 	////
 	vector<double> measure1(obj.vertices.size(), 1);
 	TestingCylinder::simulateFlyOverPerspectiveMeasure(obj, edges, measure1, shift, name);
@@ -157,12 +164,17 @@ int main(int argc, char**argv)
 	//TestingCylinder::simulateFlythrough(obj, edges, measure2, shift, name);
 	//obj.colorVertices(measure2, Misc::getColorPalette(), true);
 	//obj.writePLYFileColorVertices(name + "_colors_flythrough", false, true);
-	////////
-	////////////vector<double> measure3(obj.vertices.size(), 1);
-	//TestingCylinder::simulateFlythroughReverese(obj, edges, measure2, pi / 2, name);
+	////////////
+	////////////////vector<double> measure3(obj.vertices.size(), 1);
+	//TestingCylinder::simulateFlythroughReverese(obj, edges, measure2, shift, name);
 	//obj.colorVertices(measure2, Misc::getColorPalette(), true);
 	//obj.writePLYFileColorVertices(name + "_colors_flythrough_rev", false, true);
 
+	//vector<double> measure(obj.vertices.size(), 1);
+	////TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure(obj, edges, measure, name);
+	//TestingCylinder::simulateFlyInMeasure(obj, edges, measure, 10, name);
+	//obj.colorVertices(measure, Misc::getColorPalette(), true);
+	//obj.writePLYFileColorVertices(name + "_colors_flat", false, true);
 	/*TubularObject pal = TestingCylinder::testCylinderFromPath(0, 2 * pi / 3, 4, 8 * pi * Misc::getColorPalette().size());
 	double m = -1;
 	vector<double> pm;

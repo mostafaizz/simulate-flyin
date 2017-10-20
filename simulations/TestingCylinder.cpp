@@ -66,16 +66,80 @@ vector<Vertex3D> TestingCylinder::createCylinderFromPath(double cylinderR, doubl
 	return createCylinderFromPath(rVector, rotStep, path, half, shift);
 }
 
+
+// the rotational shift is used to rotate the cutting plane of for the Fly over
+vector<double> TestingCylinder::simulateFlyInMeasure(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, int numCameras, string oupName)
+{
+	auto start = std::chrono::system_clock::now();
+	if (numCameras < 3)
+	{
+		numCameras = 3;
+	}
+	PerspectiveCamera cam;
+	cam.near = 0;// 1.5 * cylinder.maxRadius;
+	cam.far = cylinder.maxRadius * 1.5;
+	cam.sy = cam.sx = 20 * cylinder.maxRadius;
+
+	//cam.fov = pi / 2;
+	//cam.setFocal(3 * cylinder.maxRadius);
+	cam.setFovH(0.1 + 2 * pi);
+	cam.setFovV(0.1 + 2 * pi);
+
+	cout << "cam.getFovH() = " << cam.getFovH() * 180 / pi << endl;
+	cout << "cam.getFocalLength() = " << cam.getFocalLength() << endl;
+	
+	for (int c = 0; c < numCameras; c++)
+	{
+		double rotShift = c * (2 * pi / numCameras);
+		vector<Point3D> path;
+		vector<Point3D> lookAt;
+		vector<Point3D> up;
+		for (int i = 0; i < cylinder.xAxis.size(); i++)
+		{
+			path.push_back(cylinder.centerline[i]);
+			
+			Point3D look1 = cylinder.calcSurfacePointLocation(i, rotShift, 1.5 * cylinder.maxRadius);
+			look1 = look1 - cylinder.centerline[i];
+			look1.normalize();
+			lookAt.push_back(look1);
+
+			up.push_back(cylinder.tangents[i]);
+		}
+		Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data, false);
+	}
+
+	/*Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
+	Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);*/
+
+	vector<double> cumMeasure = Misc::calcCumulativeHistogram(m_p_data, edges);
+	if (oupName.length() > 0)
+	{
+		// printing output
+		ofstream oupFlat(oupName + "_oupFlyIn_.csv");
+		cout << oupName + "_oupFlyIn_.csv" << endl;
+		for (int i = 0; i < cumMeasure.size(); i++)
+		{
+			oupFlat << edges[i] << "," << cumMeasure[i] << endl;
+		}
+		oupFlat.close();
+	}
+	printTime(start, __FUNCTION__);
+
+	return cumMeasure;
+}
+
+
 // the rotational shift is used to rotate the cutting plane of for the Fly over
 vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject & cylinder, vector<double>& edges, vector<double>& m_p_data, double rotShift, string oupName)
 {
 	auto start = std::chrono::system_clock::now();
 
 	PerspectiveCamera cam;
-	cam.near = 0;// 1.5 * cylinder.maxRadius;
-	cam.far = cylinder.maxRadius * 2.5;
-	cam.sy = cam.sx = 20 * cylinder.maxRadius;
-	
+	cam.near = 1.5 * cylinder.maxRadius;
+	cam.far = cylinder.maxRadius * 3;
+	cam.sy = 20 * cylinder.maxRadius;
+	cam.sx = 20 * cylinder.maxRadius;
+
 	//cam.fov = pi / 2;
 	//cam.setFocal(3 * cylinder.maxRadius);
 	cam.setFovH(pi / 2);
@@ -86,9 +150,9 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 	vector<Point3D> path1, path2;
 	vector<Point3D> lookAt1, lookAt2;
 	vector<Point3D> up1, up2;
-
+	//cylinder.maxRadius = 2;
 	for (int i = 0; i < cylinder.xAxis.size(); i++)
-	//for(int i = 0;i < 1;i++)
+	//for(int i = 0;i < 5;i++)
 	{
 		path1.push_back(cylinder.calcSurfacePointLocation(i, rotShift - pi/2, 1.5 * cylinder.maxRadius));
 		path2.push_back(cylinder.calcSurfacePointLocation(i, rotShift + pi / 2, 1.5 * cylinder.maxRadius));
@@ -104,18 +168,24 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 		up1.push_back(cylinder.tangents[i]);
 		up2.push_back(cylinder.tangents[i]);
 	}
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path1, lookAt1, m_p_data, true);
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path2, lookAt2, m_p_data, true);
+	/*Misc::calcVisMeasurePerspective(0, cylinder, &cam, path1, lookAt1, m_p_data, false);
+	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path2, lookAt2, m_p_data, false);*/
 
 	/*Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
 	Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);*/
+
+	Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
+	Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);
+
 
 	vector<double> cumMeasure = Misc::calcCumulativeHistogram(m_p_data, edges);
 	if (oupName.length() > 0)
 	{
 		// printing output
-		ofstream oupFlat("oupFlyover_" + oupName + ".csv");
-		cout << "oupFlyover_" << oupName.c_str() << ".csv" << endl;
+		string name = oupName + "_oupFlyover_.csv";
+		ofstream oupFlat(name.c_str());
+		
+		puts(name.c_str());
 		for (int i = 0; i < cumMeasure.size(); i++)
 		{
 			oupFlat << edges[i] << "," << cumMeasure[i] << endl;
@@ -126,6 +196,7 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 	
 	return cumMeasure;
 }
+
 void TestingCylinder::printTime(std::chrono::time_point<std::chrono::system_clock> start, std::string name)
 {
 	auto end = std::chrono::system_clock::now();
@@ -167,8 +238,8 @@ vector<double> TestingCylinder::simulateFlythrough(TubularObject & cylinder, vec
 	if (oupName.length() > 0)
 	{
 		// printing output
-		ofstream oupFlyt("oupFlythrough_" + oupName + ".csv");
-		cout << "oupFlythrough_" << oupName.c_str() << ".csv" << endl;
+		ofstream oupFlyt(oupName + "_oupFlythrough_.csv");
+		cout << oupName + "_oupFlythrough_.csv" << endl;
 		for (int i = 0; i < cumMeasure.size(); i++)
 		{
 			oupFlyt << edges[i] << "," << cumMeasure[i] << endl;
@@ -215,8 +286,8 @@ vector<double> TestingCylinder::simulateFlythroughReverese(TubularObject & cylin
 	if (oupName.length() > 0)
 	{
 		// printing output
-		ofstream oupFlyt("oupFlythroughRev_" + oupName + ".csv");
-		cout << "oupFlythroughRev_" << oupName.c_str() << ".csv" << endl;
+		ofstream oupFlyt(oupName + "_oupFlythroughRev_.csv");
+		cout << oupName + "_oupFlythroughRev_.csv" << endl;
 		for (int i = 0; i < cumMeasure.size(); i++)
 		{
 			oupFlyt << edges[i] << "," << cumMeasure[i] << endl;
@@ -344,14 +415,14 @@ TubularObject TestingCylinder::testCylinderFromPath(double shift, double rotStep
 	vector<double> cylR;
 	for (double x = 0; x < length; x += (rotStep * cylRadius))
 	{
-		//path.push_back({ x, sin(x) , 0 }); // centerline sine
-		path.push_back({x, 0 , 0 });
+		path.push_back({ x, sin(x) , 0 }); // centerline sine
+		//path.push_back({x, 0 , 0 });
 		cylR.push_back(cylRadius + 0.2 * sin(5 * x));
 		//cylR.push_back(cylRadius + 0.5 * sin(5 * x)); // for the simple center
 		//cylR.push_back(cylRadius + 0.35 * sin(5 * x)); // for the sine center
 	}
-	//TubularObject cyl0(cylR, rotStep, path, false, shift);
-	TubularObject cyl0(cylRadius, rotStep, path, false, shift);
+	TubularObject cyl0(cylR, rotStep, path, false, shift);
+	//TubularObject cyl0(cylRadius, rotStep, path, false, shift);
 
 	return cyl0;
 }

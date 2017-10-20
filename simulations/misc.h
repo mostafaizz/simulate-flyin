@@ -11,8 +11,13 @@ const double epsilon = 0.000001;
 class Misc
 {
 public:
+	static int pnPoly(vector<Point3D*>& poly, Point3D & pt);
 	// faceInd is the face being tested right now
 	static bool checkIntersection(TubularObject& tubular, int halfTag, const int j, const Point3D& loc, vector<pair<int, double> > & tmpM);
+
+	static bool checkIntersection1(TubularObject & tubular, int halfTag, const int vInd, vector<pair<int, double>>& tmpM, vector<double>& tmpNumerator);
+
+	static bool checkIntersection2(TubularObject & tubular, int halfTag, const int vInd, vector<pair<int, double>>& tmpM);
 
 	// calculate visualization measure using a perspective camera
 	// assume all directions are normalized already
@@ -30,6 +35,8 @@ public:
 
 	static void calcVisMeasurePerspective1(int halfTag, TubularObject & tubular, const PerspectiveCamera * cam, 
 		const vector<Point3D>& path, const vector<Point3D>& pathLookAt, const vector<Point3D>& up, vector<double>& output);
+
+	static void calcVisMeasurePerspective2(int halfTag, TubularObject & tubular_, const PerspectiveCamera * cam, const vector<Point3D>& path, const vector<Point3D>& pathLookAt, const vector<Point3D>& up, vector<double>& output);
 
 	// calculate visualization measure using a panoramic camera moving along centerline of a cylinder
 	// assume all directions are normalized already

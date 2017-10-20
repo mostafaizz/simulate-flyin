@@ -1,13 +1,14 @@
 #pragma once
+#define USE_SSE4 1
+
 #include <cmath>
 #include <iostream>
+#if USE_SSE4
 #include <smmintrin.h>
-
+#endif
 using namespace std;
 
 const double pi = 3.14159265359;
-
-#define USE_SSE4 1
 
 class Point3D
 {
@@ -49,5 +50,5 @@ public:
 	void normalize();
 
 	friend ostream& operator<<(ostream& ostr, Point3D& pt);
-	friend istream& operator>>(istream& istr, Point3D& pt);
+	friend istream& operator >> (istream& istr, Point3D& pt);
 };

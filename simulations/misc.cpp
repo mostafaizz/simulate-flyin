@@ -1,5 +1,6 @@
 #include "misc.h"
 #include <unordered_set>
+#include <map>
 
 #define DEBUG_INTERSECTION 0
 
@@ -77,6 +78,91 @@ bool Misc::checkIntersection(TubularObject& tubular, int halfTag, const int vInd
 		{
 			int f = tmpM[i].first;
 			if (/*tmpM[f] <= 1 && */tubular.vertexFaces[vInd].find(f) == tubular.vertexFaces[vInd].end())
+			{
+				//printf("%d\n", f);
+				const Face *face = &(tubular.faces[f]);
+
+				if (face->tag == halfTag)
+				{
+					//// check only if this is one of the correct faces to use
+					// not one of the faces of this vertex
+
+					double denom = dir.dot(face->normal);
+					// if parallel the denom (dot product 
+					if (abs(denom) > epsilon)
+					{
+						Point3D tmpN = face->points[0]->operator-(loc);
+						double numerator = tmpN.dot(face->normal);
+
+						// if the point within the line segment
+						if (numerator > 0 && numerator <= (length * denom))
+						{
+							double t = numerator / denom;
+							Point3D interPt = (dir * t) + loc;
+							//intersection = Misc::isLineIntersectPlan(interPt, face);
+							if (face->isPointInside(interPt))
+							{
+								return true;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
+
+// halfTag: 0 if not tag, 1 first half, 2 second half
+bool Misc::checkIntersectionEn(TubularObject& tubular, int halfTag, const int vInd, const Point3D& loc, vector<int> & tmpM)
+{
+	// for the line
+	Point3D dir = tubular.vertices[vInd].pt - loc;
+	double length = dir.getL2Norm();
+	//dir.normalize();
+
+	const vector<Face> &faces = (tubular.faces);
+	//const int size = faces.size();
+	//printf("%d\n", tmpM.size());
+	int size = tmpM.size();
+	if (!halfTag)
+	{
+		// take all points
+		for (int i = 0; i < size; i++)
+		{
+			int f = tmpM[i];
+			if (tubular.vertexFaces[vInd].find(f) == tubular.vertexFaces[vInd].end())
+			{
+				Face *face = &(tubular.faces[f]);
+				//// check only if this is one of the correct faces to use
+				// not one of the faces of this vertex
+				double denom = dir.dot(face->normal);
+				// if parallel the denom (dot product 
+				if (denom < -epsilon || denom > epsilon)
+				{
+					Point3D tmpN = *face->points[0] - loc;
+					double numerator = tmpN.dot(face->normal);
+
+					double t = numerator / denom;
+					if (t >= 0 && t <= 1)
+					{
+						Point3D interPt = (dir * t) + loc;
+						//intersection = Misc::isLineIntersectPlan(interPt, face);
+						if (face->isPointInside(interPt))
+						{
+							return true;
+						}
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		for (int i = 0; i < size; i++)
+		{
+			int f = tmpM[i];
+			if (tubular.vertexFaces[vInd].find(f) == tubular.vertexFaces[vInd].end())
 			{
 				//printf("%d\n", f);
 				const Face *face = &(tubular.faces[f]);
@@ -200,24 +286,26 @@ bool Misc::checkIntersection1(TubularObject& tubular, int halfTag, const int vIn
 }
 
 // halfTag: 0 if not tag, 1 first half, 2 second half
-bool Misc::checkIntersection2(TubularObject& tubular, int halfTag, const int vInd, vector<pair<int, double> > & tmpM)
+bool Misc::checkIntersection2(TubularObject& tubular, int halfTag, const int vInd, vector<int> & tmpM)
 {
 	Point3D pt = tubular.vertices[vInd].pt;
 	const vector<Face> &faces = (tubular.faces);
+	const unordered_map<int, bool> & vertexFaces = tubular.vertexFaces[vInd];
 	//const int size = faces.size();
 	//printf("%d\n", tmpM.size());
 	int size = tmpM.size();
 	if (!halfTag)
 	{
 		// take all points
+
 		for (int i = 0; i < size; i++)
 		{
-			int f = tmpM[i].first;
-			if (tubular.vertexFaces[vInd].find(f) == tubular.vertexFaces[vInd].end())
+			int f = tmpM[i];
+			if (vertexFaces.find(f) == vertexFaces.end())
 			{
 				Face *face = &(tubular.faces[f]);
 				
-				if (pnPoly(face->points, pt))
+				if (face->center[2] <= pt[2] && pnPoly(face->points, pt))
 				{
 					return true;
 				}
@@ -318,6 +406,189 @@ void Misc::calcVisMeasurePerspective(
 	}
 }
 
+// calculate visualization measure using a perspective camera
+// assume all directions are normalized already
+void Misc::calcVisMeasurePerspectiveEn(
+	int halfTag,
+	TubularObject& tubular, const PerspectiveCamera * cam,
+	const vector<Point3D>& path, const vector<Point3D>& pathLookAt, vector<double>& output,
+	bool backfaceCull)
+{
+	//vector<Vertex3D> data = tubular.vertices;
+	const int startPath = 0;// path.size() / 2 - test;
+	const int endPath = path.size();
+	const int stepPath = 1;
+	const double camTest = cos(cam->getFovH() / 2);
+	int facesSize = tubular.faces.size();
+	vector<vector<int> > pathFaces(path.size());
+	vector<map<float, int> > vertMeasure(tubular.vertices.size());
+
+#pragma omp parallel for
+	for (int i = startPath; i < endPath; i += stepPath)
+	{
+		const Point3D loc = path[i];
+		vector<int> &tmpFaces = pathFaces[i];
+		//for (int jj = facesSize - 3; jj < facesSize; jj++)
+		for (int jj = 0; jj < facesSize; jj++)
+		{
+			if (halfTag == 0 || halfTag == tubular.faces[jj].tag)
+			{
+				// assuming v is already normalized
+				Point3D cameraAxisDirection = pathLookAt[i];
+				//cameraAxisDirection.normalize();
+
+				Point3D pt = tubular.faces[jj].center;
+				Point3D vectorFromCameraToVertex = pt - loc;
+				// get the perpendicular distance from the camera 
+				// by getting the projection of the vector from the camera to the point on the lookat vector
+				double distance = vectorFromCameraToVertex.dot(cameraAxisDirection);
+				if (distance >= cam->near && distance <= cam->far)
+				{
+
+					// normalize the projection direction
+					vectorFromCameraToVertex.normalize();
+					const Point3D vertexNormal = tubular.faces[jj].normal;
+
+					// check if the point is in the field of view
+					double pDotv = vectorFromCameraToVertex.dot(cameraAxisDirection);
+					if (pDotv >= camTest)
+					{
+
+						// check if the point is in the View Frustum
+						double normalDotCameraAxis = vectorFromCameraToVertex.dot(vertexNormal);
+						if (normalDotCameraAxis <= 0 || !backfaceCull)
+						{
+							double m_p_temp = pDotv * normalDotCameraAxis;
+							if (distance > cam->getFocalLength())
+							{
+								m_p_temp *= (cam->getFocalLength() / distance);
+							}
+#pragma omp critical
+							{
+								tmpFaces.push_back(jj);
+								for (int k = 0; k < tubular.faces[jj].indeces.size(); k++)
+								{
+									int vInd = tubular.faces[jj].indeces[k];
+									vertMeasure[vInd][m_p_temp] = i;
+								}
+							}
+						}
+					}
+				}
+			}
+			//pathFaces[i] = tmpFaces;
+		}
+	}
+	int size = vertMeasure.size();
+#pragma omp parallel for
+	for (int vInd = 0; vInd < size; vInd++)
+	{
+		for (map<float, int>::iterator it = vertMeasure[vInd].begin(); it != vertMeasure[vInd].end() && it->first < output[vInd]; it++)
+		{
+			// check if there is intersection between camera line and cells other than this point cell
+			if (!checkIntersectionEn(tubular, halfTag, vInd, path[it->second], pathFaces[it->second]))
+			{
+				// there is intersection and we can not get this vertex from this
+				output[vInd] = it->first;
+				break;
+			}
+		}
+	}
+}
+
+
+// calculate visualization measure using a perspective camera
+// assume all directions are normalized already
+void Misc::calcVisMeasurePerspectiveEn1(
+	int halfTag,
+	TubularObject& tubular, const PerspectiveCamera * cam,
+	const vector<Point3D>& path, const vector<Point3D>& pathLookAt, vector<double>& output,
+	bool backfaceCull)
+{
+	const double camTest = cos(cam->getFovH() / 2);
+	int facesSize = tubular.faces.size();
+	
+	int outerStep = 500;
+	for (int outer = 0; outer < path.size(); outer += outerStep)
+	{
+		vector<vector<int> > pathFaces(path.size());
+		vector<map<float, int> > vertMeasure(tubular.vertices.size());
+		const int startPath = outer;// path.size() / 2 - test;
+		const int endPath = std::min(startPath + outerStep, (int)(path.size()));
+		const int stepPath = 1;
+#pragma omp parallel for
+		for (int i = startPath; i < endPath; i += stepPath)
+		{
+			const Point3D loc = path[i];
+			vector<int> &tmpFaces = pathFaces[i];
+			//for (int jj = facesSize - 3; jj < facesSize; jj++)
+			for (int jj = 0; jj < facesSize; jj++)
+			{
+				if (halfTag == 0 || halfTag == tubular.faces[jj].tag)
+				{
+					// assuming v is already normalized
+					Point3D cameraAxisDirection = pathLookAt[i];
+					//cameraAxisDirection.normalize();
+
+					Point3D pt = tubular.faces[jj].center;
+					Point3D vectorFromCameraToVertex = pt - loc;
+					// get the perpendicular distance from the camera 
+					// by getting the projection of the vector from the camera to the point on the lookat vector
+					double distance = vectorFromCameraToVertex.dot(cameraAxisDirection);
+					if (distance >= cam->near && distance <= cam->far)
+					{
+
+						// normalize the projection direction
+						vectorFromCameraToVertex.normalize();
+						const Point3D vertexNormal = tubular.faces[jj].normal;
+
+						// check if the point is in the field of view
+						double pDotv = vectorFromCameraToVertex.dot(cameraAxisDirection);
+						if (pDotv >= camTest)
+						{
+
+							// check if the point is in the View Frustum
+							double normalDotCameraAxis = vectorFromCameraToVertex.dot(vertexNormal);
+							if (normalDotCameraAxis <= 0 || !backfaceCull)
+							{
+								double m_p_temp = pDotv * normalDotCameraAxis;
+								if (distance > cam->getFocalLength())
+								{
+									m_p_temp *= (cam->getFocalLength() / distance);
+								}
+#pragma omp critical
+								{
+									tmpFaces.push_back(jj);
+									for (int k = 0; k < tubular.faces[jj].indeces.size(); k++)
+									{
+										int vInd = tubular.faces[jj].indeces[k];
+										vertMeasure[vInd][m_p_temp] = i;
+									}
+								}
+							}
+						}
+					}
+				}
+				//pathFaces[i] = tmpFaces;
+			}
+		}
+		int size = vertMeasure.size();
+#pragma omp parallel for
+		for (int vInd = 0; vInd < size; vInd++)
+		{
+			for (map<float, int>::iterator it = vertMeasure[vInd].begin(); it != vertMeasure[vInd].end() && it->first < output[vInd]; it++)
+			{
+				// check if there is intersection between camera line and cells other than this point cell
+				if (!checkIntersectionEn(tubular, halfTag, vInd, path[it->second], pathFaces[it->second]))
+				{
+					// there is intersection and we can not get this vertex from this
+					output[vInd] = it->first;
+					break;
+				}
+			}
+		}
+	}
+}
 
 
 Mat3x3 Misc::getCamRotationMatrix(const Point3D& lookDir, const Point3D& upDir)
@@ -441,15 +712,17 @@ void Misc::calcVisMeasurePerspective2(
 	vector<double>& output)
 {
 
-#pragma omp parallel for
+
 	for (int i = 0; i < path.size(); i++)
 	{
 		TubularObject rotObj = tubular_;
 		Mat3x3 rot = getCamRotationMatrix(pathLookAt[i], up[i]);
 		rotObj.transform(path[i], rot);
 
-		vector<pair<int, double> > tmpV;
-		vector<double> tmpNumerator;
+		vector<int> tmpVert; // vertix indeces
+		map<int, double> tmpVertMap; // indeces + best measure value
+		vector<int> tmpFaces; // faces
+#pragma omp parallel for
 		for (int jj = 0; jj < tubular_.faces.size(); jj++)
 		{
 			if (halfTag == 0 || halfTag == tubular_.faces[jj].tag)
@@ -461,6 +734,10 @@ void Misc::calcVisMeasurePerspective2(
 					abs(pt.x() * cam->getFocalLength()) <= pt.z() * 0.5 * cam->sx &&
 					abs(pt.y() * cam->getFocalLength()) <= pt.z() * 0.5 * cam->sy)
 				{
+#pragma omp critical
+					{
+						tmpFaces.push_back(jj);
+					}
 					// inside the frustum
 					double distance = pt.z();
 					// calculate the measure
@@ -470,45 +747,42 @@ void Misc::calcVisMeasurePerspective2(
 					{
 						m_p_temp *= (cam->getFocalLength() / distance);
 					}
-
-					tmpV.push_back(make_pair(jj, m_p_temp));
-					//Point3D tmpN = *face->points[0];
-					double numerator = rotObj.faces[jj].points[0]->dot(rotObj.faces[jj].normal);
-					tmpNumerator.push_back(numerator);
-					
-				}
-			}
-		}
-#pragma omp parallel for
-		for (int v = 0; v < rotObj.vertices.size(); v++)
-		{
-			double factor = -cam->getFocalLength() / rotObj.vertices[v].pt.z();
-			rotObj.vertices[v].pt[0] *= factor;
-			rotObj.vertices[v].pt[1] *= factor;
-		}
-		for (vector<pair<int, double> >::iterator it = tmpV.begin(); it != tmpV.end(); it++)
-		{
-			int jj = it->first;
-
-			// check if the frontal face is visible
-			if (rotObj.faces[jj].normal.z() <= 0)
-			{
-#pragma omp parallel for
-				for (int kk = 0; kk < tubular_.faces[jj].indeces.size(); kk++)
-				{
-					int vInd = tubular_.faces[jj].indeces[kk];
-					if (it->second < output[vInd])
+					for (int kk = 0; kk < tubular_.faces[jj].indeces.size(); kk++)
 					{
-						if (!checkIntersection2(rotObj, halfTag, vInd, tmpV))
+						int vInd = tubular_.faces[jj].indeces[kk];
+#pragma omp critical
 						{
-							// there is no intersection
-
-							output[vInd] = it->second;
+							if (tmpVertMap[vInd] > m_p_temp)
+							{
+								tmpVertMap[vInd] = m_p_temp;
+							}
 						}
 					}
 				}
 			}
+		}
 
+		for (map<int, double>::iterator it = tmpVertMap.begin(); it != tmpVertMap.end(); it++)
+		{
+			int v = it->first;
+			tmpVert.push_back(v);
+
+			double factor = -cam->getFocalLength() / rotObj.vertices[v].pt.z();
+			rotObj.vertices[v].pt[0] *= factor;
+			rotObj.vertices[v].pt[1] *= factor;
+		}
+#pragma omp parallel for
+		for (int j = 0; j < tmpVert.size(); j++)
+		{
+			int vInd = tmpVert[j];
+			if (output[vInd] > tmpVertMap[vInd])
+			{
+				if (!checkIntersection2(rotObj, halfTag, vInd, tmpFaces))
+				{
+					// there is no intersection
+					output[vInd] = tmpVertMap[vInd];
+				}
+			}
 		}
 	}
 }

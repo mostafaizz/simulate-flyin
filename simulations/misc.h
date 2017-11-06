@@ -15,9 +15,11 @@ public:
 	// faceInd is the face being tested right now
 	static bool checkIntersection(TubularObject& tubular, int halfTag, const int j, const Point3D& loc, vector<pair<int, double> > & tmpM);
 
+	static bool checkIntersectionEn(TubularObject & tubular, int halfTag, const int vInd, const Point3D & loc, vector<int>& tmpM);
+
 	static bool checkIntersection1(TubularObject & tubular, int halfTag, const int vInd, vector<pair<int, double>>& tmpM, vector<double>& tmpNumerator);
 
-	static bool checkIntersection2(TubularObject & tubular, int halfTag, const int vInd, vector<pair<int, double>>& tmpM);
+	static bool checkIntersection2(TubularObject & tubular, int halfTag, const int vInd, vector<int>& tmpM);
 
 	// calculate visualization measure using a perspective camera
 	// assume all directions are normalized already
@@ -30,6 +32,10 @@ public:
 		const vector<Point3D>& pathLookAt,
 		vector<double>& output,
 		bool backfaceCull = false);
+
+	static void calcVisMeasurePerspectiveEn(int halfTag, TubularObject & tubular, const PerspectiveCamera * cam, const vector<Point3D>& path, const vector<Point3D>& pathLookAt, vector<double>& output, bool backfaceCull);
+
+	static void calcVisMeasurePerspectiveEn1(int halfTag, TubularObject & tubular, const PerspectiveCamera * cam, const vector<Point3D>& path, const vector<Point3D>& pathLookAt, vector<double>& output, bool backfaceCull);
 
 	static Mat3x3 getCamRotationMatrix(const Point3D & lookDir,const Point3D & upDir);
 

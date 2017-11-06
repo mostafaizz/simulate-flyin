@@ -77,13 +77,13 @@ vector<double> TestingCylinder::simulateFlyInMeasure(TubularObject & cylinder, v
 	}
 	PerspectiveCamera cam;
 	cam.near = 0;// 1.5 * cylinder.maxRadius;
-	cam.far = cylinder.maxRadius * 1.5;
+	cam.far = cylinder.maxRadius * 3;
 	cam.sy = cam.sx = 20 * cylinder.maxRadius;
 
 	//cam.fov = pi / 2;
 	//cam.setFocal(3 * cylinder.maxRadius);
-	cam.setFovH(0.1 + 2 * pi);
-	cam.setFovV(0.1 + 2 * pi);
+	cam.setFovH(0.1 + 2 * pi / numCameras);
+	cam.setFovV(0.1 + 2 * pi / numCameras);
 
 	cout << "cam.getFovH() = " << cam.getFovH() * 180 / pi << endl;
 	cout << "cam.getFocalLength() = " << cam.getFocalLength() << endl;
@@ -105,7 +105,8 @@ vector<double> TestingCylinder::simulateFlyInMeasure(TubularObject & cylinder, v
 
 			up.push_back(cylinder.tangents[i]);
 		}
-		Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data, false);
+		//Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data, false);
+		Misc::calcVisMeasurePerspectiveEn1(0, cylinder, &cam, path, lookAt, m_p_data, false);
 	}
 
 	/*Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
@@ -152,7 +153,7 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 	vector<Point3D> up1, up2;
 	//cylinder.maxRadius = 2;
 	for (int i = 0; i < cylinder.xAxis.size(); i++)
-	//for(int i = 0;i < 5;i++)
+	//for(int i = 4;i < 10;i++)
 	{
 		path1.push_back(cylinder.calcSurfacePointLocation(i, rotShift - pi/2, 1.5 * cylinder.maxRadius));
 		path2.push_back(cylinder.calcSurfacePointLocation(i, rotShift + pi / 2, 1.5 * cylinder.maxRadius));
@@ -171,11 +172,14 @@ vector<double> TestingCylinder::simulateFlyOverPerspectiveMeasure(TubularObject 
 	/*Misc::calcVisMeasurePerspective(0, cylinder, &cam, path1, lookAt1, m_p_data, false);
 	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path2, lookAt2, m_p_data, false);*/
 
+	Misc::calcVisMeasurePerspectiveEn1(0, cylinder, &cam, path1, lookAt1, m_p_data, false);
+	Misc::calcVisMeasurePerspectiveEn1(0, cylinder, &cam, path2, lookAt2, m_p_data, false);
+
 	/*Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
 	Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);*/
 
-	Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
-	Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);
+	/*Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path1, lookAt1, up1, m_p_data);
+	Misc::calcVisMeasurePerspective2(0, cylinder, &cam, path2, lookAt2, up2, m_p_data);*/
 
 
 	vector<double> cumMeasure = Misc::calcCumulativeHistogram(m_p_data, edges);
@@ -231,7 +235,8 @@ vector<double> TestingCylinder::simulateFlythrough(TubularObject & cylinder, vec
 
 		up.push_back(cylinder.xAxis[i]);
 	}
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data);
+	//Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data);
+	Misc::calcVisMeasurePerspectiveEn1(0, cylinder, &cam, path, lookAt, m_p_data, false);
 	//Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path, lookAt,up, m_p_data);
 
 	vector<double> cumMeasure = Misc::calcCumulativeHistogram(m_p_data, edges);
@@ -279,7 +284,8 @@ vector<double> TestingCylinder::simulateFlythroughReverese(TubularObject & cylin
 
 		up.push_back(cylinder.xAxis[i]);
 	}
-	Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data);
+	//Misc::calcVisMeasurePerspective(0, cylinder, &cam, path, lookAt, m_p_data);
+	Misc::calcVisMeasurePerspectiveEn1(0, cylinder, &cam, path, lookAt, m_p_data, false);
 	//Misc::calcVisMeasurePerspective1(0, cylinder, &cam, path, lookAt,up, m_p_data);
 
 	vector<double> cumMeasure = Misc::calcCumulativeHistogram(m_p_data, edges);
@@ -310,7 +316,7 @@ vector<double> TestingCylinder::simulateEquirectangularFlyOverPerspectiveMeasure
 	EquirectangularCamera cam;
 	cam.near = 0.01;
 	cam.far = 2 * cylinder.maxRadius;
-	cam.verticalFOV = pi;
+	cam.verticalFOV = pi/3;
 	cam.horizontalFOV = pi;
 	vector<Point3D> lookAt, path, upDir;
 	for (int i = 0; i < cylinder.xAxis.size(); i++)
@@ -371,8 +377,8 @@ TubularObject TestingCylinder::testCylinderCycleHalf(double shift, double step, 
 	for (int i = 1; i < path.size(); i++)
 	{
 		distance += (path[i] - path[i - 1]).getL2Norm();
-		//cylR.push_back(cylinderR + 0.2 * sin(5 * distance));
-		cylR.push_back(cylinderR + 0.5 * sin(5 * distance));
+		cylR.push_back(cylinderR + 0.2 * sin(5 * distance));
+		//cylR.push_back(cylinderR + 0.5 * sin(5 * distance));
 	}
 	TubularObject cyl0(cylinderR, step, path, false, shift);
 	//TubularObject cyl0(cylR, step, path, false, shift);
@@ -415,10 +421,10 @@ TubularObject TestingCylinder::testCylinderFromPath(double shift, double rotStep
 	vector<double> cylR;
 	for (double x = 0; x < length; x += (rotStep * cylRadius))
 	{
-		path.push_back({ x, sin(x) , 0 }); // centerline sine
-		//path.push_back({x, 0 , 0 });
-		cylR.push_back(cylRadius + 0.2 * sin(5 * x));
-		//cylR.push_back(cylRadius + 0.5 * sin(5 * x)); // for the simple center
+		//path.push_back({ x, sin(x) , 0 }); // centerline sine
+		path.push_back({x, 0 , 0 }); // simple centerline
+		//cylR.push_back(cylRadius + 0.2 * sin(5 * x));
+		cylR.push_back(cylRadius + 0.5 * sin(x)); // for the simple center
 		//cylR.push_back(cylRadius + 0.35 * sin(5 * x)); // for the sine center
 	}
 	TubularObject cyl0(cylR, rotStep, path, false, shift);

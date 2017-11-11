@@ -146,7 +146,7 @@ int main(int argc, char**argv)
 	double shift = 0;// pi / 2;
 	
 	//TubularObject obj = TestingCylinder::testCylinderCycleHalf(shift, pi / 16, 3, 1);
-	TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 20, 1, 4 * pi);
+	TubularObject obj = TestingCylinder::testCylinderFromPath(shift, pi / 100, 1, 2 * pi);
 	//TubularObject obj = TestingCylinder::testCylinderFromFile("centerLineAndRadius.txt", shift);
 	//TubularObject obj(objPath, normalFile);
 	//TubularObject obj("cube.ply", "centerLine.txt");
@@ -159,17 +159,17 @@ int main(int argc, char**argv)
 	vector<double> measure1(obj.vertices.size(), 1);
 	TestingCylinder::simulateFlyOverPerspectiveMeasure(obj, edges, measure1, shift, name);
 	obj.colorVertices(measure1, Misc::getColorPalette(), true);
-	obj.writePLYFileColorVertices(name + "_colors_flyover", true, false);
+	obj.writePLYFileColorVertices(name + "_colors_flyover", true, true);
 	
 	vector<double> measure2(obj.vertices.size(), 1);
 	TestingCylinder::simulateFlythrough(obj, edges, measure2, shift, name);
 	obj.colorVertices(measure2, Misc::getColorPalette(), true);
-	obj.writePLYFileColorVertices(name + "_colors_flythrough", false, false);
+	obj.writePLYFileColorVertices(name + "_colors_flythrough", false, true);
 	//////////
 	//////////////vector<double> measure3(obj.vertices.size(), 1);
-	TestingCylinder::simulateFlythroughReverese(obj, edges, measure2, shift, name);
+	/*TestingCylinder::simulateFlythroughReverese(obj, edges, measure2, shift, name);
 	obj.colorVertices(measure2, Misc::getColorPalette(), true);
-	obj.writePLYFileColorVertices(name + "_colors_flythrough_rev", false, false);
+	obj.writePLYFileColorVertices(name + "_colors_flythrough_rev", false, false);*/
 
 	//int cc[] = { 4, 6, 8, 12, 20 };
 	//for (int c = 0; c < 5; c++)
